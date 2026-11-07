@@ -1,0 +1,16 @@
+Werk eichprobe-20261107172528 (Probewerk des Probenführers, ohne Modell)
+
+## B-2 Eichprobe: Kartentests und Angriffstest am leeren Werk
+Tests: 3 · am leeren Werk fehlgeschlagen: 2 · abgewiesen: ["B1 :: besteht immer"] · Rauschbreite 34.9 ms
+B-2 Gegenprobe (immer bestehender Test abgewiesen, echte Tests fallen am leeren Werk): bestanden
+
+## B-8 Leerprobe: Schlussprüfung mit einer Testdatei ohne Test
+Schlussprüfung bestanden: false
+Marke: {
+  "commit": "43cbc47626110efe10c8ce56c0f255b1d9f5c9cf",
+  "tests": 0,
+  "fehlgeschlagen": 0,
+  "bestanden": false,
+  "hinweis": "Prüfung ohne Gegenstand: keine Schlussprüfungstests vorhanden."
+}
+B-8 Leerprobe (meldet „Prüfung ohne Gegenstand“ statt zu bestehen): bestanden

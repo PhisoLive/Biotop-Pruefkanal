@@ -1,0 +1,19 @@
+# Mängelliste Phase B (gesammelt, Nachbesserung gesammelt nach dem Bau; 3.4)
+
+| Nr. | Mangel | Quelle | Behebung | Stand |
+|---|---|---|---|---|
+| M1 | Kartenpunkt 9: ESLint, Prettier, jscpd übergehen `dist/`, `build/`, `coverage/`; ein Werk könnte dort Code verstecken (T3) | Agent pruefer-messung | Bauweise nur über die im Commit getrackten Quelldateien messen | behoben in fbe19ee (mit Gegenprobe) |
+| M2 | Suiteordner-Namen stehen doppelt (src/seal/paths.ts und src/examiner/exam-run.ts) | Agent pruefer-lauf | SealStore-Port liefert den Ordner je Suite | behoben in fbe19ee (mit Gegenprobe) |
+| M3 | B-10-Prüfung: Bruchstücke, die wörtlich im Bauplan stehen, erzeugen Fehltreffer | Agent pruefer-lauf | Skript nimmt nur Bruchstücke aus, die wörtlich im Bauplan/Vertrag stehen (der Baumeister kennt sie ohnehin); Gegenprobe mit fremdem Testnamen | behoben in fbe19ee (mit Gegenprobe) |
+| M4 | Abgelehnte Idee (IdeaRefused) muss im Kern als „Abgebrochen“ mit Grund enden | Agent denker | im Kern abfangen | behoben: Kern beendet jede WorkInterruption (auch IdeaRefused, Kasse) mit vollständigem Bericht; Unterbrechungsmatrix über 16 Stellen in test/core/work-run-stops.test.ts |
+| M5 | Kern ruft writeFinalExam noch mit einem Argument auf | Agent siegelmeister | Kern-Agent | behoben: src/core/sealing.ts ruft writeFinalExam(plan, cardSuites) |
+| M6 | JSON-Ausschnitt aus Modelltext steht in thinker/validate.ts und sealmaster/validate.ts gleich | Agent siegelmeister | gemeinsame Hilfe in src/infra/json.ts | behoben in fbe19ee (mit Gegenprobe) |
+| M7 | Kasse speichert das Modell je Aufruf nicht als eigene Spalte; D-4 verlangt das protokollierte Modell | Abgleich mit D-4 | Gateway-Protokoll in die Datenbank (Ereignis oder Spalte) | behoben: main.ts schreibt je Modellaufruf ein Ereignis „modell“ (Rolle, Modell, Zweck, USD) ins Werkprotokoll |
+| M8 | Mutationsprüfung zeigt bei Werkzeugfehler nur „0 Mutanten“, nicht die Ursache | Phase A | Ausgabeende in den Befund | behoben in fbe19ee (mit Gegenprobe) |
+| M9 | Ü3: Prototyp muss nach der Eichung (am leeren Werk) als erster Commit ins Werk-Repo | Abgleich mit Ü3 | Kern/Zusammensetzung | behoben: src/builder/prototype-seed.ts (withPrototype) spielt den Prototyp vor Generation 1 ein; 4 Tests |
+| M10 | Code, den ein Werk unter node_modules/ committet, bleibt ungemessen (T3-artig) | Nachbesserungsagent | Kartenpunkt 9 fällt, wenn quellen.txt Pfade unter node_modules/ enthält | offen |
+| M11 | Werkwurzel /srv/biotop/werke steht an 3 Stellen (G11) | Nachbesserungsagent | eine Konstante | offen |
+| M12 | quellen.txt steht nicht in der Belegliste des Prüflaufs | Nachbesserungsagent | in session.evidence aufnehmen | offen |
+| M13 | B-8 im ersten echten Lauf NICHT bestanden: Node meldet eine Testdatei ohne Test selbst als bestandenen Test; die Schlussprüfung „bestand“ ohne Gegenstand | Probe B-8 (Lauf 1) | Zeilen ohne Verhaltensnummer zählen nur, wenn sie scheitern (src/examiner/results.ts); Gegenprobe: ohne Filter 2 Tests rot; Lauf 2 bestanden | behoben |
+| M14 | Kammer-Label: Prüfcontainer und Prüfnetze eines aufgenommenen Stufenwerks (ohne prepare) tragen das Platzhalter-Label; dispose findet sie nicht (Prüflauf räumt selbst ab, dispose ist Sicherheitsnetz) | Zusammensetzungsagent C | Kammer kennt runRoot oder merkt sich das abgeleitete Werk | offen |
+| M15 | G11: BUILDER_OWNER in intake.ts doppelt zu USERS.baumeister; RUN_ROOT nur in main | Zusammensetzungsagent C | Konstanten zusammenführen | offen |

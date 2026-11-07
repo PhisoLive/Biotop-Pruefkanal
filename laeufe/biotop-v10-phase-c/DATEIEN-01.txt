@@ -1,0 +1,2 @@
+# SHA-256  Bytes  Datei (relativ zum Ordner)
+23730d40e532e5e12fdb9ae9d59cb6f52f777fccd3542e8485089833fa969d69        2981  BERICHT-01.md

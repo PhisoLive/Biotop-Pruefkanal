@@ -1,0 +1,62 @@
+bestanden   0  biotop-netz-pakete intern, biotop-proxy-pakete hängt zusätzlich an bridge
+    Beleg: intern=true; Netze des Proxys: biotop-netz-pakete, bridge
+bestanden   0  biotop-netz-baumeister intern, biotop-proxy-baumeister hängt zusätzlich an bridge
+    Beleg: intern=true; Netze des Proxys: biotop-netz-baumeister, bridge
+bestanden   p  prepare legt das Werk-Repo mit Zweig main an und übergibt es an 1003:1003
+    Beleg: /tmp/biotop-kammerprobe-oNwoe7/kammer-probe-4168785/repo: HEAD=refs/heads/main, Eigentümer 1003:1003
+bestanden   a  Profil none erreicht registry.npmjs.org nicht
+    Beleg: FEHLER getaddrinfo EAI_AGAIN registry.npmjs.org
+bestanden   b1  Profil packages erreicht https://registry.npmjs.org/ (HTTP 200)
+    Beleg: HTTP 200 {}
+bestanden   b2  Profil packages erreicht https://example.com nicht (Proxy 403)
+    Beleg: FEHLER Request was cancelled. <- Proxy response (403) !== 200 when HTTP Tunneling
+bestanden   b3  Profil packages ohne Proxy-Nutzung (direkt) kommt nicht hinaus
+    Beleg: FEHLER getaddrinfo EAI_AGAIN registry.npmjs.org
+bestanden   c1  Profil builder erreicht api.anthropic.com (irgendeine HTTP-Antwort)
+    Beleg: HTTP 404
+bestanden   c2  Profil builder erreicht https://example.com nicht (Proxy 403)
+    Beleg: FEHLER Request was cancelled. <- Proxy response (403) !== 200 when HTTP Tunneling
+bestanden   d1  Prüfer erreicht das Werk über http://werk:8080 (biotop-pruefung-09ac1ba9)
+    Beleg: HTTP 200 werk-antwort
+bestanden   d2  Prüfer im Prüfnetz kommt nicht nach draußen
+    Beleg: FEHLER getaddrinfo EAI_AGAIN registry.npmjs.org
+bestanden   d3  Werk im Prüfnetz kommt nicht nach draußen
+    Beleg: FEHLER getaddrinfo EAI_AGAIN registry.npmjs.org
+bestanden   d4  Service.exec reicht stdin in den laufenden Werk-Container
+    Beleg: stdout="hallo", Code 0
+bestanden   f  Abbruch über AbortSignal beendet den Container (docker kill), nichts bleibt liegen
+    Beleg: abgelehnt: TimeoutError: The operation was aborted due to timeout nach 1793 ms; übrige Container: keine
+bestanden   e  Protokoll von biotop-proxy-pakete zeigt die abgewiesenen Versuche
+    Beleg: abgewiesen: example.com:443 · erlaubt: registry.npmjs.org:443
+bestanden   e  Protokoll von biotop-proxy-baumeister zeigt die abgewiesenen Versuche
+    Beleg: abgewiesen: example.com:443 · erlaubt: api.anthropic.com:443
+bestanden   g  dispose räumt übrig gebliebene Container des Werks über das Label weg
+    Beleg: biotop-werk-2fcd3909 gestartet; danach übrig: keine
+
+Tafel der Kammerprobe
+| Nr. | Behauptung | Ergebnis |
+| --- | --- | --- |
+| 0 | biotop-netz-pakete intern, biotop-proxy-pakete hängt zusätzlich an bridge | bestanden |
+| 0 | biotop-netz-baumeister intern, biotop-proxy-baumeister hängt zusätzlich an bridge | bestanden |
+| p | prepare legt das Werk-Repo mit Zweig main an und übergibt es an 1003:1003 | bestanden |
+| a | Profil none erreicht registry.npmjs.org nicht | bestanden |
+| b1 | Profil packages erreicht https://registry.npmjs.org/ (HTTP 200) | bestanden |
+| b2 | Profil packages erreicht https://example.com nicht (Proxy 403) | bestanden |
+| b3 | Profil packages ohne Proxy-Nutzung (direkt) kommt nicht hinaus | bestanden |
+| c1 | Profil builder erreicht api.anthropic.com (irgendeine HTTP-Antwort) | bestanden |
+| c2 | Profil builder erreicht https://example.com nicht (Proxy 403) | bestanden |
+| d1 | Prüfer erreicht das Werk über http://werk:8080 (biotop-pruefung-09ac1ba9) | bestanden |
+| d2 | Prüfer im Prüfnetz kommt nicht nach draußen | bestanden |
+| d3 | Werk im Prüfnetz kommt nicht nach draußen | bestanden |
+| d4 | Service.exec reicht stdin in den laufenden Werk-Container | bestanden |
+| f | Abbruch über AbortSignal beendet den Container (docker kill), nichts bleibt liegen | bestanden |
+| e | Protokoll von biotop-proxy-pakete zeigt die abgewiesenen Versuche | bestanden |
+| e | Protokoll von biotop-proxy-baumeister zeigt die abgewiesenen Versuche | bestanden |
+| g | dispose räumt übrig gebliebene Container des Werks über das Label weg | bestanden |
+
+17 von 17 bestanden, 0 nicht bestanden.
+
+real	0m26.780s
+user	0m1.320s
+sys	0m1.987s
+exit=0

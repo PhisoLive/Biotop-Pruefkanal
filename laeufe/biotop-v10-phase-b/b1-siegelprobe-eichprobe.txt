@@ -1,0 +1,71 @@
+Siegelprobe B-1 · Werk eichprobe-20261107172528 · 2026-11-07T19:47:20.685Z
+
+$ stat -c '%A %a %U:%G %n' /srv/biotop/siegel /srv/biotop/siegel/eichprobe-20261107172528
+drwx------ 700 pruefer:pruefer /srv/biotop/siegel
+drwx------ 700 pruefer:pruefer /srv/biotop/siegel/eichprobe-20261107172528
+
+$ find /srv/biotop/siegel/eichprobe-20261107172528 -printf '%m %u:%g %y ./%P'
+700 pruefer:pruefer d ./
+700 pruefer:pruefer d ./angriff
+600 pruefer:pruefer f ./angriff/A-unbekannt.test.mjs
+600 pruefer:pruefer f ./karte.json
+700 pruefer:pruefer d ./karte
+600 pruefer:pruefer f ./karte/B1-immer.test.mjs
+600 pruefer:pruefer f ./karte/B1-start.test.mjs
+700 pruefer:pruefer d ./schluss
+600 pruefer:pruefer f ./schluss/B1-ohne.test.mjs
+
+$ /usr/sbin/runuser -u baumeister -- ls -la /srv/biotop/siegel/eichprobe-20261107172528
+  Exit 2 · ls: cannot access '/srv/biotop/siegel/eichprobe-20261107172528': Permission denied
+$ /usr/sbin/runuser -u pruefer -- ls -la /srv/biotop/siegel/eichprobe-20261107172528
+  Exit 0 · 329 Bytes auf stdout (Inhalt nicht gezeigt)
+$ /usr/sbin/runuser -u baumeister -- cat /srv/biotop/siegel/eichprobe-20261107172528/angriff/A-unbekannt.test.mjs
+  Exit 1 · cat: /srv/biotop/siegel/eichprobe-20261107172528/angriff/A-unbekannt.test.mjs: Permission denied
+$ /usr/sbin/runuser -u pruefer -- cat /srv/biotop/siegel/eichprobe-20261107172528/angriff/A-unbekannt.test.mjs
+  Exit 0 · 245 Bytes auf stdout (Inhalt nicht gezeigt)
+$ /usr/sbin/runuser -u baumeister -- cat /srv/biotop/siegel/eichprobe-20261107172528/karte.json
+  Exit 1 · cat: /srv/biotop/siegel/eichprobe-20261107172528/karte.json: Permission denied
+$ /usr/sbin/runuser -u pruefer -- cat /srv/biotop/siegel/eichprobe-20261107172528/karte.json
+  Exit 0 · 116 Bytes auf stdout (Inhalt nicht gezeigt)
+$ /usr/sbin/runuser -u baumeister -- cat /srv/biotop/siegel/eichprobe-20261107172528/karte/B1-immer.test.mjs
+  Exit 1 · cat: /srv/biotop/siegel/eichprobe-20261107172528/karte/B1-immer.test.mjs: Permission denied
+$ /usr/sbin/runuser -u pruefer -- cat /srv/biotop/siegel/eichprobe-20261107172528/karte/B1-immer.test.mjs
+  Exit 0 · 166 Bytes auf stdout (Inhalt nicht gezeigt)
+$ /usr/sbin/runuser -u baumeister -- cat /srv/biotop/siegel/eichprobe-20261107172528/karte/B1-start.test.mjs
+  Exit 1 · cat: /srv/biotop/siegel/eichprobe-20261107172528/karte/B1-start.test.mjs: Permission denied
+$ /usr/sbin/runuser -u pruefer -- cat /srv/biotop/siegel/eichprobe-20261107172528/karte/B1-start.test.mjs
+  Exit 0 · 234 Bytes auf stdout (Inhalt nicht gezeigt)
+$ /usr/sbin/runuser -u baumeister -- cat /srv/biotop/siegel/eichprobe-20261107172528/schluss/B1-ohne.test.mjs
+  Exit 1 · cat: /srv/biotop/siegel/eichprobe-20261107172528/schluss/B1-ohne.test.mjs: Permission denied
+$ /usr/sbin/runuser -u pruefer -- cat /srv/biotop/siegel/eichprobe-20261107172528/schluss/B1-ohne.test.mjs
+  Exit 0 · 161 Bytes auf stdout (Inhalt nicht gezeigt)
+
+SHA-256 bei der Versiegelung: keine (finalize lief nicht)
+SHA-256 jetzt:                84e5822eb353ce4434d25f6ef3601f2a9a46f36328af58905e3642ffe6d416f5
+
+ok     ./: 700 pruefer:pruefer (Soll 700 pruefer:pruefer)
+ok     ./angriff: 700 pruefer:pruefer (Soll 700 pruefer:pruefer)
+ok     ./angriff/A-unbekannt.test.mjs: 600 pruefer:pruefer (Soll 600 pruefer:pruefer)
+ok     ./karte.json: 600 pruefer:pruefer (Soll 600 pruefer:pruefer)
+ok     ./karte: 700 pruefer:pruefer (Soll 700 pruefer:pruefer)
+ok     ./karte/B1-immer.test.mjs: 600 pruefer:pruefer (Soll 600 pruefer:pruefer)
+ok     ./karte/B1-start.test.mjs: 600 pruefer:pruefer (Soll 600 pruefer:pruefer)
+ok     ./schluss: 700 pruefer:pruefer (Soll 700 pruefer:pruefer)
+ok     ./schluss/B1-ohne.test.mjs: 600 pruefer:pruefer (Soll 600 pruefer:pruefer)
+ok     baumeister darf den Ordner auflisten nicht
+ok     pruefer darf den Ordner auflisten (Gegenprobe)
+ok     baumeister darf angriff/A-unbekannt.test.mjs lesen nicht
+ok     pruefer darf angriff/A-unbekannt.test.mjs lesen (Gegenprobe)
+ok     baumeister darf karte.json lesen nicht
+ok     pruefer darf karte.json lesen (Gegenprobe)
+ok     baumeister darf karte/B1-immer.test.mjs lesen nicht
+ok     pruefer darf karte/B1-immer.test.mjs lesen (Gegenprobe)
+ok     baumeister darf karte/B1-start.test.mjs lesen nicht
+ok     pruefer darf karte/B1-start.test.mjs lesen (Gegenprobe)
+ok     baumeister darf schluss/B1-ohne.test.mjs lesen nicht
+ok     pruefer darf schluss/B1-ohne.test.mjs lesen (Gegenprobe)
+FEHLER Siegel ist abgeschlossen (Marker mit Prüfsumme vorhanden)
+FEHLER Prüfsumme jetzt gleicht der bei der Versiegelung
+
+Siegelprobe B-1: NICHT BESTANDEN (21 von 23 Prüfungen)
+exit=1
