@@ -1,0 +1,25 @@
+| Gegenprobe | Regel | Prüfung | Hook | Befund benannt |
+|---|---|---|---|---|
+| funktion-zu-lang | Funktion ≤ 40 Zeilen | lint | NICHT abgewiesen | nein |
+| komplexitaet | Komplexität ≤ 10 | lint | NICHT abgewiesen | nein |
+| doppelung | Doppelungen ≤ 2 % | doppelungen | NICHT abgewiesen | nein |
+| zyklus | 0 Abhängigkeitszyklen | architektur | NICHT abgewiesen | nein |
+| any | 0 × any | lint | NICHT abgewiesen | nein |
+| ungenutzter-export | 0 ungenutzte Exporte | ungenutzt | NICHT abgewiesen | nein |
+| architektur-siegelpfad | nur das Siegel-Modul kennt Siegelpfade | architektur | NICHT abgewiesen | nein |
+| architektur-claude | nur der Baumeister startet Claude Code | lint | NICHT abgewiesen | nein |
+| inhaltsleerer-test | Mutationswert ≥ 70 % (Mutant überlebt) | mutation | NICHT abgewiesen | nein |
+| datei-zu-lang | Datei ≤ 300 Zeilen | lint | NICHT abgewiesen | nein |
+| parameter | ≤ 4 Parameter | lint | NICHT abgewiesen | nein |
+| typfehler | Typprüfung ohne Fehler | typen | NICHT abgewiesen | nein |
+| format | Formatierer ohne Befund | format | NICHT abgewiesen | nein |
+| ungenutzte-datei | 0 ungenutzte Dateien | ungenutzt | NICHT abgewiesen | nein |
+| ungenutzte-abhaengigkeit | 0 ungenutzte Abhängigkeiten | ungenutzt | NICHT abgewiesen | nein |
+| abdeckung | Kern ≥ 90 % Zeilen | tests | NICHT abgewiesen | nein |
+| sicherheitsbefund | 0 hohe oder kritische Befunde | audit | NICHT abgewiesen | nein |
+| geheimnis | 0 Geheimnisse | geheimnisse | NICHT abgewiesen | nein |
+
+Kontrolle (harmloser Commit geht durch): NEIN
+Gesamt: FEHLER
+
+exit=1

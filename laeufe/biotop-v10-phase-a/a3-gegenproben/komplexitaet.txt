@@ -1,0 +1,89 @@
+Gegenprobe komplexitaet (Komplexität ≤ 10)
+Exit-Code git commit: 1
+
+### typen – bestanden
+60 Dateien, 0 Typfehler
+
+
+### lint – abgewiesen
+62 Dateien, 1 Fehler, 0 Warnungen
+/tmp/biotop-pruefen-RX7oXZ/src/core/flow.ts:49 complexity: Function 'tooComplex' has a complexity of 12. Maximum allowed is 10.
+
+### format – bestanden
+Checking formatting...
+All matched files use Prettier code style!
+
+### doppelungen – bestanden
+4530 Zeilen, Doppelungen 0 %, 0 Klone
+[90mNo duplicates found.[39m
+[90m┌────────────┬────────────────┬─────────────┬──────────────┬──────────────┬──────────────────┬───────────────────┐[39m
+[90m│[39m[31m Format     [39m[90m│[39m[31m Files analyzed [39m[90m│[39m[31m Total lines [39m[90m│[39m[31m Total tokens [39m[90m│[39m[31m Clones found [39m[90m│[39m[31m Duplicated lines [39m[90m│[39m[31m Duplicated tokens [39m[90m│[39m
+[90m├────────────┼────────────────┼─────────────┼──────────────┼──────────────┼──────────────────┼───────────────────┤[39m
+[90m│[39m typescript [90m│[39m 57             [90m│[39m 4530        [90m│[39m 35376        [90m│[39m 0            [90m│[39m 0 (0.00%)        [90m│[39m 0 (0.00%)         [90m│[39m
+[90m├────────────┼────────────────┼─────────────┼──────────────┼──────────────┼──────────────────┼───────────────────┤[39m
+[90m│[39m [1mTotal:[22m     [90m│[39m 57             [90m│[39m 4530        [90m│[39m 35376        [90m│[39m 0            [90m│[39m 0 (0.00%)        [90m│[39m 0 (0.00%)         [90m│[39m
+[90m└────────────┴────────────────┴─────────────┴──────────────┴──────────────┴──────────────────┴───────────────────┘[39m
+[90mFound 0 clones.[39m
+[32mJSON report saved to reports/jscpd/jscpd-report.json[39m
+[90mtime: 263.692ms[39m
+
+### architektur – bestanden
+65 Module, 0 Verstöße
+
+
+### ungenutzt – abgewiesen
+Unused exports (1)
+tooComplex  function  src/core/flow.ts:49:17
+
+### tests – bestanden
+272 Tests, 0 fehlgeschlagen; Abdeckung Zeilen 96.51 %, Zweige 90.35 %
+ ✓ test/core/errors.test.ts (5 tests) 38ms
+ ✓ test/infra/json.test.ts (29 tests) 155ms
+ ✓ test/core/card.test.ts (15 tests) 203ms
+ ✓ test/builder/claude-cli.test.ts (8 tests) 118ms
+ ✓ test/seal/paths.test.ts (19 tests) 164ms
+ ✓ test/infra/env.test.ts (7 tests) 119ms
+ ✓ test/core/verdict.test.ts (13 tests) 174ms
+
+ Test Files  21 passed (21)
+      Tests  272 passed (272)
+   Start at  14:53:11
+   Duration  14.91s (tests 50%, transform 25%, worker 13%, import 12%)
+
+    Isolate  21 workers spawned · ~1.01s startup each (spawn + environment, per file)
+             at least ~3.22s faster with isolate: false — reuses workers across files instead of one per file
+
+JSON report written to /tmp/biotop-pruefen-RX7oXZ/reports/vitest.json
+[34m % [39m[2mCoverage report from [22m[33mv8[39m
+
+=============================== Coverage summary ===============================
+Statements   : 94.22% ( 375/398 )
+Branches     : 90.35% ( 206/228 )
+Functions    : 99.24% ( 132/133 )
+Lines        : 96.51% ( 332/344 )
+================================================================================
+
+### mutation – abgewiesen
+1051 Mutanten, Mutationswert 94.67 % (Grenze 70 % gesamt und je Datei)
+src/core/flow.ts: 41.77 %
+
+### audit – bestanden
+505 Abhängigkeiten, hoch 0, kritisch 0
+
+### geheimnisse – bestanden
+
+
+| Prüfung | Ergebnis | Gegenstand | Dauer | Regel |
+|---|---|---|---|---|
+| typen | BESTANDEN | 60 | 6.5 s | Typprüfung ohne Fehler |
+| lint | ABGEWIESEN | 62 | 17 s | Linter: 0 Fehler, 0 Warnungen (any, Länge, Parameter, Komplexität, Architektur-Literale) |
+| format | BESTANDEN | 59 | 6.2 s | Formatierer: 0 Abweichungen |
+| doppelungen | BESTANDEN | 4530 | 0.6 s | Doppelungen höchstens 2 % |
+| architektur | BESTANDEN | 65 | 3.4 s | 0 Zyklen, Modulgrenzen |
+| ungenutzt | ABGEWIESEN | 59 | 5.1 s | 0 ungenutzte Dateien, Exporte, Abhängigkeiten |
+| tests | BESTANDEN | 272 | 17.7 s | Tests grün; Kern ≥ 90 % Zeilen, ≥ 85 % Zweige |
+| mutation | ABGEWIESEN | 1051 | 37.3 s | Kern: Mutationswert ≥ 70 % |
+| audit | BESTANDEN | 505 | 5.6 s | 0 hohe oder kritische Sicherheitsbefunde |
+| geheimnisse | BESTANDEN | 59 | 0.9 s | 0 Geheimnisse im Inhalt |
+
+Gesamt: ABGEWIESEN

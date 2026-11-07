@@ -1,0 +1,90 @@
+Kontrolle (harmloser Commit)
+Exit-Code git commit: 0
+
+[main fff6eb2] Kontrolle
+ 1 file changed, 2 insertions(+)
+### typen – bestanden
+60 Dateien, 0 Typfehler
+
+
+### lint – bestanden
+62 Dateien, 0 Fehler, 0 Warnungen
+
+
+### format – bestanden
+Checking formatting...
+All matched files use Prettier code style!
+
+### doppelungen – bestanden
+4515 Zeilen, Doppelungen 0 %, 0 Klone
+[90mNo duplicates found.[39m
+[90m┌────────────┬────────────────┬─────────────┬──────────────┬──────────────┬──────────────────┬───────────────────┐[39m
+[90m│[39m[31m Format     [39m[90m│[39m[31m Files analyzed [39m[90m│[39m[31m Total lines [39m[90m│[39m[31m Total tokens [39m[90m│[39m[31m Clones found [39m[90m│[39m[31m Duplicated lines [39m[90m│[39m[31m Duplicated tokens [39m[90m│[39m
+[90m├────────────┼────────────────┼─────────────┼──────────────┼──────────────┼──────────────────┼───────────────────┤[39m
+[90m│[39m typescript [90m│[39m 57             [90m│[39m 4515        [90m│[39m 35262        [90m│[39m 0            [90m│[39m 0 (0.00%)        [90m│[39m 0 (0.00%)         [90m│[39m
+[90m├────────────┼────────────────┼─────────────┼──────────────┼──────────────┼──────────────────┼───────────────────┤[39m
+[90m│[39m [1mTotal:[22m     [90m│[39m 57             [90m│[39m 4515        [90m│[39m 35262        [90m│[39m 0            [90m│[39m 0 (0.00%)        [90m│[39m 0 (0.00%)         [90m│[39m
+[90m└────────────┴────────────────┴─────────────┴──────────────┴──────────────┴──────────────────┴───────────────────┘[39m
+[90mFound 0 clones.[39m
+[32mJSON report saved to reports/jscpd/jscpd-report.json[39m
+[90mtime: 103.155ms[39m
+
+### architektur – bestanden
+65 Module, 0 Verstöße
+
+
+### ungenutzt – bestanden
+
+
+### tests – bestanden
+272 Tests, 0 fehlgeschlagen; Abdeckung Zeilen 100 %, Zweige 100 %
+   ✓ echtes secretlint: leeres Verzeichnis ist eine Prüfung ohne Gegenstand 1208ms
+ ✓ test/quality/run-checks.test.ts (7 tests) 63ms
+ ✓ test/quality/parsers.test.ts (17 tests) 81ms
+ ✓ test/core/flow.test.ts (7 tests) 59ms
+ ✓ test/infra/env.test.ts (7 tests) 17ms
+ ✓ test/seal/paths.test.ts (19 tests) 19ms
+ ✓ test/core/errors.test.ts (5 tests) 28ms
+
+ Test Files  21 passed (21)
+      Tests  272 passed (272)
+   Start at  14:51:50
+   Duration  7.19s (tests 48%, transform 31%, import 11%, worker 9%)
+
+    Isolate  21 workers spawned · ~462ms startup each (spawn + environment, per file)
+             at least ~1.48s faster with isolate: false — reuses workers across files instead of one per file
+
+JSON report written to /tmp/biotop-pruefen-KoXqZj/reports/vitest.json
+[34m % [39m[2mCoverage report from [22m[33mv8[39m
+
+=============================== Coverage summary ===============================
+Statements   : 100% ( 375/375 )
+Branches     : 100% ( 206/206 )
+Functions    : 100% ( 132/132 )
+Lines        : 100% ( 332/332 )
+================================================================================
+
+### mutation – bestanden
+1005 Mutanten, Mutationswert 99 % (Grenze 70 % gesamt und je Datei)
+
+
+### audit – bestanden
+505 Abhängigkeiten, hoch 0, kritisch 0
+
+### geheimnisse – bestanden
+
+
+| Prüfung | Ergebnis | Gegenstand | Dauer | Regel |
+|---|---|---|---|---|
+| typen | BESTANDEN | 60 | 5.4 s | Typprüfung ohne Fehler |
+| lint | BESTANDEN | 62 | 14.5 s | Linter: 0 Fehler, 0 Warnungen (any, Länge, Parameter, Komplexität, Architektur-Literale) |
+| format | BESTANDEN | 59 | 4.2 s | Formatierer: 0 Abweichungen |
+| doppelungen | BESTANDEN | 4515 | 0.3 s | Doppelungen höchstens 2 % |
+| architektur | BESTANDEN | 65 | 1.7 s | 0 Zyklen, Modulgrenzen |
+| ungenutzt | BESTANDEN | 59 | 2.9 s | 0 ungenutzte Dateien, Exporte, Abhängigkeiten |
+| tests | BESTANDEN | 272 | 9.1 s | Tests grün; Kern ≥ 90 % Zeilen, ≥ 85 % Zweige |
+| mutation | BESTANDEN | 1005 | 26.3 s | Kern: Mutationswert ≥ 70 % |
+| audit | BESTANDEN | 505 | 4.3 s | 0 hohe oder kritische Sicherheitsbefunde |
+| geheimnisse | BESTANDEN | 59 | 0.7 s | 0 Geheimnisse im Inhalt |
+
+Gesamt: BESTANDEN

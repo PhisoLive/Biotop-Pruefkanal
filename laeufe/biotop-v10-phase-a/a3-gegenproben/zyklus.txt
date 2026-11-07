@@ -1,0 +1,89 @@
+Gegenprobe zyklus (0 Abhängigkeitszyklen)
+Exit-Code git commit: 1
+
+### typen – bestanden
+60 Dateien, 0 Typfehler
+
+
+### lint – bestanden
+62 Dateien, 0 Fehler, 0 Warnungen
+
+
+### format – bestanden
+Checking formatting...
+All matched files use Prettier code style!
+
+### doppelungen – bestanden
+4517 Zeilen, Doppelungen 0 %, 0 Klone
+[90mNo duplicates found.[39m
+[90m┌────────────┬────────────────┬─────────────┬──────────────┬──────────────┬──────────────────┬───────────────────┐[39m
+[90m│[39m[31m Format     [39m[90m│[39m[31m Files analyzed [39m[90m│[39m[31m Total lines [39m[90m│[39m[31m Total tokens [39m[90m│[39m[31m Clones found [39m[90m│[39m[31m Duplicated lines [39m[90m│[39m[31m Duplicated tokens [39m[90m│[39m
+[90m├────────────┼────────────────┼─────────────┼──────────────┼──────────────┼──────────────────┼───────────────────┤[39m
+[90m│[39m typescript [90m│[39m 57             [90m│[39m 4517        [90m│[39m 35269        [90m│[39m 0            [90m│[39m 0 (0.00%)        [90m│[39m 0 (0.00%)         [90m│[39m
+[90m├────────────┼────────────────┼─────────────┼──────────────┼──────────────┼──────────────────┼───────────────────┤[39m
+[90m│[39m [1mTotal:[22m     [90m│[39m 57             [90m│[39m 4517        [90m│[39m 35269        [90m│[39m 0            [90m│[39m 0 (0.00%)        [90m│[39m 0 (0.00%)         [90m│[39m
+[90m└────────────┴────────────────┴─────────────┴──────────────┴──────────────┴──────────────────┴───────────────────┘[39m
+[90mFound 0 clones.[39m
+[32mJSON report saved to reports/jscpd/jscpd-report.json[39m
+[90mtime: 244.518ms[39m
+
+### architektur – abgewiesen
+65 Module, 1 Verstöße
+kein-zyklus: src/core/card.ts → src/core/verdict.ts
+
+### ungenutzt – abgewiesen
+Unused exports (1)
+judgeWork  src/core/card.ts:50:10
+
+### tests – bestanden
+272 Tests, 0 fehlgeschlagen; Abdeckung Zeilen 100 %, Zweige 100 %
+ ✓ test/infra/json.test.ts (29 tests) 65ms
+ ✓ test/builder/claude-cli.test.ts (8 tests) 57ms
+ ✓ test/quality/verdict.test.ts (6 tests) 52ms
+ ✓ test/core/flow.test.ts (7 tests) 56ms
+ ✓ test/core/errors.test.ts (5 tests) 90ms
+ ✓ test/infra/env.test.ts (7 tests) 39ms
+ ✓ test/seal/paths.test.ts (19 tests) 48ms
+
+ Test Files  21 passed (21)
+      Tests  272 passed (272)
+   Start at  14:54:56
+   Duration  13.73s (tests 57%, transform 16%, import 14%, worker 14%)
+
+    Isolate  21 workers spawned · ~1.05s startup each (spawn + environment, per file)
+             at least ~3.36s faster with isolate: false — reuses workers across files instead of one per file
+
+JSON report written to /tmp/biotop-pruefen-UQjK5w/reports/vitest.json
+[34m % [39m[2mCoverage report from [22m[33mv8[39m
+
+=============================== Coverage summary ===============================
+Statements   : 100% ( 375/375 )
+Branches     : 100% ( 206/206 )
+Functions    : 100% ( 132/132 )
+Lines        : 100% ( 332/332 )
+================================================================================
+
+### mutation – bestanden
+1005 Mutanten, Mutationswert 99 % (Grenze 70 % gesamt und je Datei)
+
+
+### audit – bestanden
+505 Abhängigkeiten, hoch 0, kritisch 0
+
+### geheimnisse – bestanden
+
+
+| Prüfung | Ergebnis | Gegenstand | Dauer | Regel |
+|---|---|---|---|---|
+| typen | BESTANDEN | 60 | 7 s | Typprüfung ohne Fehler |
+| lint | BESTANDEN | 62 | 22.6 s | Linter: 0 Fehler, 0 Warnungen (any, Länge, Parameter, Komplexität, Architektur-Literale) |
+| format | BESTANDEN | 59 | 7.8 s | Formatierer: 0 Abweichungen |
+| doppelungen | BESTANDEN | 4517 | 0.5 s | Doppelungen höchstens 2 % |
+| architektur | ABGEWIESEN | 65 | 2.5 s | 0 Zyklen, Modulgrenzen |
+| ungenutzt | ABGEWIESEN | 59 | 3.1 s | 0 ungenutzte Dateien, Exporte, Abhängigkeiten |
+| tests | BESTANDEN | 272 | 15.5 s | Tests grün; Kern ≥ 90 % Zeilen, ≥ 85 % Zweige |
+| mutation | BESTANDEN | 1005 | 38.2 s | Kern: Mutationswert ≥ 70 % |
+| audit | BESTANDEN | 505 | 7.5 s | 0 hohe oder kritische Sicherheitsbefunde |
+| geheimnisse | BESTANDEN | 59 | 1.1 s | 0 Geheimnisse im Inhalt |
+
+Gesamt: ABGEWIESEN

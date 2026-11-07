@@ -1,0 +1,89 @@
+Gegenprobe sicherheitsbefund (0 hohe oder kritische Befunde)
+Exit-Code git commit: 1
+
+### typen – bestanden
+60 Dateien, 0 Typfehler
+
+
+### lint – bestanden
+62 Dateien, 0 Fehler, 0 Warnungen
+
+
+### format – bestanden
+Checking formatting...
+All matched files use Prettier code style!
+
+### doppelungen – bestanden
+4515 Zeilen, Doppelungen 0 %, 0 Klone
+[90mNo duplicates found.[39m
+[90m┌────────────┬────────────────┬─────────────┬──────────────┬──────────────┬──────────────────┬───────────────────┐[39m
+[90m│[39m[31m Format     [39m[90m│[39m[31m Files analyzed [39m[90m│[39m[31m Total lines [39m[90m│[39m[31m Total tokens [39m[90m│[39m[31m Clones found [39m[90m│[39m[31m Duplicated lines [39m[90m│[39m[31m Duplicated tokens [39m[90m│[39m
+[90m├────────────┼────────────────┼─────────────┼──────────────┼──────────────┼──────────────────┼───────────────────┤[39m
+[90m│[39m typescript [90m│[39m 57             [90m│[39m 4515        [90m│[39m 35262        [90m│[39m 0            [90m│[39m 0 (0.00%)        [90m│[39m 0 (0.00%)         [90m│[39m
+[90m├────────────┼────────────────┼─────────────┼──────────────┼──────────────┼──────────────────┼───────────────────┤[39m
+[90m│[39m [1mTotal:[22m     [90m│[39m 57             [90m│[39m 4515        [90m│[39m 35262        [90m│[39m 0            [90m│[39m 0 (0.00%)        [90m│[39m 0 (0.00%)         [90m│[39m
+[90m└────────────┴────────────────┴─────────────┴──────────────┴──────────────┴──────────────────┴───────────────────┘[39m
+[90mFound 0 clones.[39m
+[32mJSON report saved to reports/jscpd/jscpd-report.json[39m
+[90mtime: 84.374ms[39m
+
+### architektur – bestanden
+65 Module, 0 Verstöße
+
+
+### ungenutzt – abgewiesen
+Unused dependencies (1)
+lodash  package.json:45:6
+
+### tests – bestanden
+272 Tests, 0 fehlgeschlagen; Abdeckung Zeilen 100 %, Zweige 100 %
+ ✓ test/treasury/exchange.test.ts (17 tests) 365ms
+ ✓ test/quality/secrets.test.ts (12 tests) 7079ms
+   ✓ echtes secretlint: sauberer Inhalt ergibt 0 Befunde 2683ms
+   ✓ echtes secretlint: Gegenprobe findet beide eingepflanzten Schlüssel 2245ms
+   ✓ echtes secretlint: leeres Verzeichnis ist eine Prüfung ohne Gegenstand 1929ms
+ ✓ test/infra/env.test.ts (7 tests) 47ms
+ ✓ test/core/errors.test.ts (5 tests) 12ms
+
+ Test Files  21 passed (21)
+      Tests  272 passed (272)
+   Start at  15:02:50
+   Duration  12.33s (transform 42%, tests 39%, import 10%, worker 10%)
+
+    Isolate  21 workers spawned · ~773ms startup each (spawn + environment, per file)
+             at least ~2.48s faster with isolate: false — reuses workers across files instead of one per file
+
+JSON report written to /tmp/biotop-pruefen-764vTK/reports/vitest.json
+[34m % [39m[2mCoverage report from [22m[33mv8[39m
+
+=============================== Coverage summary ===============================
+Statements   : 100% ( 375/375 )
+Branches     : 100% ( 206/206 )
+Functions    : 100% ( 132/132 )
+Lines        : 100% ( 332/332 )
+================================================================================
+
+### mutation – bestanden
+1005 Mutanten, Mutationswert 99 % (Grenze 70 % gesamt und je Datei)
+
+
+### audit – abgewiesen
+506 Abhängigkeiten, hoch 1, kritisch 0
+
+### geheimnisse – bestanden
+
+
+| Prüfung | Ergebnis | Gegenstand | Dauer | Regel |
+|---|---|---|---|---|
+| typen | BESTANDEN | 60 | 13.2 s | Typprüfung ohne Fehler |
+| lint | BESTANDEN | 62 | 21.2 s | Linter: 0 Fehler, 0 Warnungen (any, Länge, Parameter, Komplexität, Architektur-Literale) |
+| format | BESTANDEN | 59 | 6.5 s | Formatierer: 0 Abweichungen |
+| doppelungen | BESTANDEN | 4515 | 0.2 s | Doppelungen höchstens 2 % |
+| architektur | BESTANDEN | 65 | 2.2 s | 0 Zyklen, Modulgrenzen |
+| ungenutzt | ABGEWIESEN | 59 | 4 s | 0 ungenutzte Dateien, Exporte, Abhängigkeiten |
+| tests | BESTANDEN | 272 | 15 s | Tests grün; Kern ≥ 90 % Zeilen, ≥ 85 % Zweige |
+| mutation | BESTANDEN | 1005 | 40.4 s | Kern: Mutationswert ≥ 70 % |
+| audit | ABGEWIESEN | 506 | 4.7 s | 0 hohe oder kritische Sicherheitsbefunde |
+| geheimnisse | BESTANDEN | 59 | 1.4 s | 0 Geheimnisse im Inhalt |
+
+Gesamt: ABGEWIESEN

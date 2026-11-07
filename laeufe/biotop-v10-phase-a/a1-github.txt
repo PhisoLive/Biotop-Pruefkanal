@@ -1,0 +1,16 @@
+$ gh api user --jq .login
+PhisoLive
+
+$ gh auth status (Zeilen mit "token" ausgeblendet – A-1: ohne Ausgabe eines Tokens)
+github.com
+  ✓ Logged in to github.com account PhisoLive (/root/.config/gh/hosts.yml)
+  - Active account: true
+  - Git operations protocol: https
+
+$ gh repo view PhisoLive/Biotop-System --json nameWithOwner,visibility
+{"nameWithOwner":"PhisoLive/Biotop-System","visibility":"PRIVATE"}
+
+$ gh repo view PhisoLive/Biotop-Pruefkanal --json nameWithOwner,visibility
+{"nameWithOwner":"PhisoLive/Biotop-Pruefkanal","visibility":"PUBLIC"}
+
+Stand: 2026-11-07T14:15:44Z

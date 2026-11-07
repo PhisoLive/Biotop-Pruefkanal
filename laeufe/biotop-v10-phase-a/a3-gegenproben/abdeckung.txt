@@ -1,0 +1,117 @@
+Gegenprobe abdeckung (Kern ≥ 90 % Zeilen)
+Exit-Code git commit: 1
+
+### typen – bestanden
+61 Dateien, 0 Typfehler
+
+
+### lint – bestanden
+63 Dateien, 0 Fehler, 0 Warnungen
+
+
+### format – bestanden
+Checking formatting...
+All matched files use Prettier code style!
+
+### doppelungen – bestanden
+4698 Zeilen, Doppelungen 0 %, 0 Klone
+[90mNo duplicates found.[39m
+[90m┌────────────┬────────────────┬─────────────┬──────────────┬──────────────┬──────────────────┬───────────────────┐[39m
+[90m│[39m[31m Format     [39m[90m│[39m[31m Files analyzed [39m[90m│[39m[31m Total lines [39m[90m│[39m[31m Total tokens [39m[90m│[39m[31m Clones found [39m[90m│[39m[31m Duplicated lines [39m[90m│[39m[31m Duplicated tokens [39m[90m│[39m
+[90m├────────────┼────────────────┼─────────────┼──────────────┼──────────────┼──────────────────┼───────────────────┤[39m
+[90m│[39m typescript [90m│[39m 58             [90m│[39m 4698        [90m│[39m 36289        [90m│[39m 0            [90m│[39m 0 (0.00%)        [90m│[39m 0 (0.00%)         [90m│[39m
+[90m├────────────┼────────────────┼─────────────┼──────────────┼──────────────┼──────────────────┼───────────────────┤[39m
+[90m│[39m [1mTotal:[22m     [90m│[39m 58             [90m│[39m 4698        [90m│[39m 36289        [90m│[39m 0            [90m│[39m 0 (0.00%)        [90m│[39m 0 (0.00%)         [90m│[39m
+[90m└────────────┴────────────────┴─────────────┴──────────────┴──────────────┴──────────────────┴───────────────────┘[39m
+[90mFound 0 clones.[39m
+[32mJSON report saved to reports/jscpd/jscpd-report.json[39m
+[90mtime: 75.544ms[39m
+
+### architektur – bestanden
+66 Module, 0 Verstöße
+
+
+### ungenutzt – abgewiesen
+untested30  function  src/core/untested.ts:92:17 
+untested31  function  src/core/untested.ts:95:17 
+untested32  function  src/core/untested.ts:98:17 
+untested33  function  src/core/untested.ts:101:17
+untested34  function  src/core/untested.ts:104:17
+untested35  function  src/core/untested.ts:107:17
+untested36  function  src/core/untested.ts:110:17
+untested37  function  src/core/untested.ts:113:17
+untested38  function  src/core/untested.ts:116:17
+untested39  function  src/core/untested.ts:119:17
+untested40  function  src/core/untested.ts:122:17
+untested41  function  src/core/untested.ts:125:17
+untested42  function  src/core/untested.ts:128:17
+untested43  function  src/core/untested.ts:131:17
+untested44  function  src/core/untested.ts:134:17
+untested45  function  src/core/untested.ts:137:17
+untested46  function  src/core/untested.ts:140:17
+untested47  function  src/core/untested.ts:143:17
+untested48  function  src/core/untested.ts:146:17
+untested49  function  src/core/untested.ts:149:17
+untested50  function  src/core/untested.ts:152:17
+untested51  function  src/core/untested.ts:155:17
+untested52  function  src/core/untested.ts:158:17
+untested53  function  src/core/untested.ts:161:17
+untested54  function  src/core/untested.ts:164:17
+untested55  function  src/core/untested.ts:167:17
+untested56  function  src/core/untested.ts:170:17
+untested57  function  src/core/untested.ts:173:17
+untested58  function  src/core/untested.ts:176:17
+untested59  function  src/core/untested.ts:179:17
+
+### tests – abgewiesen
+272 Tests, 0 fehlgeschlagen; Abdeckung Zeilen 84.69 %, Zweige 100 %
+ ✓ test/quality/run-checks.test.ts (7 tests) 136ms
+ ✓ test/quality/mutation-score.test.ts (8 tests) 116ms
+ ✓ test/treasury/exchange.test.ts (17 tests) 52ms
+ ✓ test/core/verdict.test.ts (13 tests) 38ms
+ ✓ test/infra/env.test.ts (7 tests) 37ms
+ ✓ test/core/errors.test.ts (5 tests) 58ms
+
+ Test Files  21 passed (21)
+      Tests  272 passed (272)
+   Start at  15:02:49
+   Duration  12.13s (tests 53%, transform 25%, import 11%, worker 11%)
+
+    Isolate  21 workers spawned · ~789ms startup each (spawn + environment, per file)
+             at least ~2.52s faster with isolate: false — reuses workers across files instead of one per file
+
+JSON report written to /tmp/biotop-pruefen-M2eSw4/reports/vitest.json
+[34m % [39m[2mCoverage report from [22m[33mv8[39m
+
+=============================== Coverage summary ===============================
+Statements   : 86.2% ( 375/435 )
+Branches     : 100% ( 206/206 )
+Functions    : 68.75% ( 132/192 )
+Lines        : 84.69% ( 332/392 )
+================================================================================
+ERROR: Coverage for lines (84.69%) does not meet global threshold (90%)
+
+### mutation – abgewiesen
+1125 Mutanten, Mutationswert 88.44 % (Grenze 70 % gesamt und je Datei)
+src/core/untested.ts: 0 %
+
+### audit – bestanden
+505 Abhängigkeiten, hoch 0, kritisch 0
+
+### geheimnisse – bestanden
+
+
+| Prüfung | Ergebnis | Gegenstand | Dauer | Regel |
+|---|---|---|---|---|
+| typen | BESTANDEN | 61 | 13.9 s | Typprüfung ohne Fehler |
+| lint | BESTANDEN | 63 | 23.1 s | Linter: 0 Fehler, 0 Warnungen (any, Länge, Parameter, Komplexität, Architektur-Literale) |
+| format | BESTANDEN | 60 | 6.5 s | Formatierer: 0 Abweichungen |
+| doppelungen | BESTANDEN | 4698 | 0.3 s | Doppelungen höchstens 2 % |
+| architektur | BESTANDEN | 66 | 2.8 s | 0 Zyklen, Modulgrenzen |
+| ungenutzt | ABGEWIESEN | 60 | 4 s | 0 ungenutzte Dateien, Exporte, Abhängigkeiten |
+| tests | ABGEWIESEN | 272 | 14.5 s | Tests grün; Kern ≥ 90 % Zeilen, ≥ 85 % Zweige |
+| mutation | ABGEWIESEN | 1125 | 40.7 s | Kern: Mutationswert ≥ 70 % |
+| audit | BESTANDEN | 505 | 4.7 s | 0 hohe oder kritische Sicherheitsbefunde |
+| geheimnisse | BESTANDEN | 60 | 1.1 s | 0 Geheimnisse im Inhalt |
+
+Gesamt: ABGEWIESEN

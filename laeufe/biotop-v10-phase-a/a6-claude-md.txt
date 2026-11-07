@@ -1,0 +1,37 @@
+# A-6 CLAUDE.md nach 3.4: Verweis auf den Masterprompt und G1–G15 als Liste, sonst nichts
+$ git show HEAD:CLAUDE.md
+# Biotop-System
+
+Maßgeblich ist allein `docs/INFINITE-EVOLUTION-BIOTOP-Masterprompt-v10.md`. Bei Widerspruch gilt diese Datei.
+
+- G1 Messen statt annehmen. „Bestätigt durch Ausführung“ nur mit beigefügter Ausgabe, sonst „gelesen, nicht ausgeführt“.
+- G2 Jede Probe braucht eine Gegenprobe, die fehlschlagen muss.
+- G3 Laut scheitern, nie still: Eine Prüfung ohne Gegenstand meldet das, statt zu bestehen.
+- G4 Ein Maßstab steht vor der Messung und wird danach nicht verhandelt. Keine Grenze wird verschoben, damit etwas durchgeht.
+- G5 Der Baumeister sieht nie einen versiegelten Test: keinen Code, keine Testnamen, keine Erwartungswerte. Mängelberichte beschreiben nur Verhalten aus dem Bau- oder Stufenplan, mit dessen Nummern.
+- G6 Nach dem Versiegeln ändert niemand einen Test, eine Schwelle oder die Karte. Ist ein Test falsch, entscheidet allein Philipp über die Berichtigung (Halt H4); sie erzeugt ein neues Siegel und steht im Bericht.
+- G7 Jede Änderung an Messgerät oder Karte während eines Werks macht daraus ein neues Werk.
+- G8 „Nichts Messbares mehr zu verbessern“ ist ein gültiges Ergebnis. Eine Scheinverbesserung ist schlimmer als ein ehrlicher Halt.
+- G9 Ein Beleg zählt dieselbe Menge wie der Befund; die Bezugsgröße steht dabei. Inhaltsabhängige Größen werden über alle Instanzen gemessen, nicht am Vertreter.
+- G10 Kein Schalter, kein Regler, kein Wert und keine Anzeige im Cockpit ohne belegte Wirkung dahinter.
+- G11 Zahlen statt Adjektive; Schätzungen tragen das Wort „Schätzung“. Jede Angabe steht an genau einer Stelle.
+- G12 Die Kasse ist Teil des Kerns: geprüft vor jedem Modellaufruf, Abbruch vor dem Überschreiten, nie danach.
+- G13 Saubere Bauweise ist Torbedingung, kein Wunsch: Ein Commit, der eine Regel aus 3.5 verletzt, kommt nicht ins Repo.
+- G14 Der Schnellmodus spart Breite, nie Ehrlichkeit: Siegel, Schlussprüfung, Bestandsschutz und Kasse gelten in jeder Reglerstellung unverändert.
+- G15 Selbstevolution nur über den versiegelten Prüfstand, auf einer Kopie, mit Philipps Freigabe und Rückweg. Das laufende Biotop ändert sich nie selbst im Betrieb.
+
+## Maschinelle Prüfung (claude-md-pruefen.py)
+G1–G15 vollständig und in Reihenfolge: True
+Wortgleich mit Masterprompt 3.2: 15 von 15
+Verweis auf Masterprompt: True
+Sonstige Zeilen außer Überschrift: 0 []
+Ergebnis: erfüllt
+Exit-Code: 0
+
+## Gegenprobe: Kopie mit zusätzlicher Zeile und fehlendem G7
+G1–G15 vollständig und in Reihenfolge: False
+Wortgleich mit Masterprompt 3.2: 14 von 14
+Verweis auf Masterprompt: True
+Sonstige Zeilen außer Überschrift: 1 ['Bitte immer schnell arbeiten.']
+Ergebnis: NICHT erfüllt
+Exit-Code: 1

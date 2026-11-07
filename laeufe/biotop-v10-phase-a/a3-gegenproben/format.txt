@@ -1,0 +1,90 @@
+Gegenprobe format (Formatierer ohne Befund)
+Exit-Code git commit: 1
+
+### typen – bestanden
+60 Dateien, 0 Typfehler
+
+
+### lint – bestanden
+62 Dateien, 0 Fehler, 0 Warnungen
+
+
+### format – abgewiesen
+Checking formatting...
+[warn] src/core/flow.ts
+[warn] Code style issues found in the above file. Run Prettier with --write to fix.
+
+### doppelungen – bestanden
+4517 Zeilen, Doppelungen 0 %, 0 Klone
+[90mNo duplicates found.[39m
+[90m┌────────────┬────────────────┬─────────────┬──────────────┬──────────────┬──────────────────┬───────────────────┐[39m
+[90m│[39m[31m Format     [39m[90m│[39m[31m Files analyzed [39m[90m│[39m[31m Total lines [39m[90m│[39m[31m Total tokens [39m[90m│[39m[31m Clones found [39m[90m│[39m[31m Duplicated lines [39m[90m│[39m[31m Duplicated tokens [39m[90m│[39m
+[90m├────────────┼────────────────┼─────────────┼──────────────┼──────────────┼──────────────────┼───────────────────┤[39m
+[90m│[39m typescript [90m│[39m 57             [90m│[39m 4517        [90m│[39m 35268        [90m│[39m 0            [90m│[39m 0 (0.00%)        [90m│[39m 0 (0.00%)         [90m│[39m
+[90m├────────────┼────────────────┼─────────────┼──────────────┼──────────────┼──────────────────┼───────────────────┤[39m
+[90m│[39m [1mTotal:[22m     [90m│[39m 57             [90m│[39m 4517        [90m│[39m 35268        [90m│[39m 0            [90m│[39m 0 (0.00%)        [90m│[39m 0 (0.00%)         [90m│[39m
+[90m└────────────┴────────────────┴─────────────┴──────────────┴──────────────┴──────────────────┴───────────────────┘[39m
+[90mFound 0 clones.[39m
+[32mJSON report saved to reports/jscpd/jscpd-report.json[39m
+[90mtime: 562.958ms[39m
+
+### architektur – bestanden
+65 Module, 0 Verstöße
+
+
+### ungenutzt – abgewiesen
+Unused exports (1)
+badlyFormatted  src/core/flow.ts:49:18
+
+### tests – bestanden
+272 Tests, 0 fehlgeschlagen; Abdeckung Zeilen 100 %, Zweige 100 %
+   ✓ echtes secretlint: sauberer Inhalt ergibt 0 Befunde 4716ms
+   ✓ echtes secretlint: Gegenprobe findet beide eingepflanzten Schlüssel 4535ms
+   ✓ echtes secretlint: leeres Verzeichnis ist eine Prüfung ohne Gegenstand 3309ms
+ ✓ test/quality/verdict.test.ts (6 tests) 187ms
+ ✓ test/builder/claude-cli.test.ts (8 tests) 16ms
+ ✓ test/core/errors.test.ts (5 tests) 61ms
+ ✓ test/infra/env.test.ts (7 tests) 14ms
+
+ Test Files  21 passed (21)
+      Tests  272 passed (272)
+   Start at  15:00:29
+   Duration  22.79s (transform 41%, tests 39%, import 12%, worker 9%)
+
+    Isolate  21 workers spawned · ~1.50s startup each (spawn + environment, per file)
+             at least ~4.82s faster with isolate: false — reuses workers across files instead of one per file
+
+JSON report written to /tmp/biotop-pruefen-OcTyaH/reports/vitest.json
+[34m % [39m[2mCoverage report from [22m[33mv8[39m
+
+=============================== Coverage summary ===============================
+Statements   : 100% ( 376/376 )
+Branches     : 100% ( 206/206 )
+Functions    : 100% ( 132/132 )
+Lines        : 100% ( 333/333 )
+================================================================================
+
+### mutation – bestanden
+1005 Mutanten, Mutationswert 99 % (Grenze 70 % gesamt und je Datei)
+
+
+### audit – bestanden
+505 Abhängigkeiten, hoch 0, kritisch 0
+
+### geheimnisse – bestanden
+
+
+| Prüfung | Ergebnis | Gegenstand | Dauer | Regel |
+|---|---|---|---|---|
+| typen | BESTANDEN | 60 | 8 s | Typprüfung ohne Fehler |
+| lint | BESTANDEN | 62 | 25.8 s | Linter: 0 Fehler, 0 Warnungen (any, Länge, Parameter, Komplexität, Architektur-Literale) |
+| format | ABGEWIESEN | 59 | 12.7 s | Formatierer: 0 Abweichungen |
+| doppelungen | BESTANDEN | 4517 | 0.9 s | Doppelungen höchstens 2 % |
+| architektur | BESTANDEN | 65 | 3.6 s | 0 Zyklen, Modulgrenzen |
+| ungenutzt | ABGEWIESEN | 59 | 8 s | 0 ungenutzte Dateien, Exporte, Abhängigkeiten |
+| tests | BESTANDEN | 272 | 27.7 s | Tests grün; Kern ≥ 90 % Zeilen, ≥ 85 % Zweige |
+| mutation | BESTANDEN | 1005 | 54.2 s | Kern: Mutationswert ≥ 70 % |
+| audit | BESTANDEN | 505 | 8.1 s | 0 hohe oder kritische Sicherheitsbefunde |
+| geheimnisse | BESTANDEN | 59 | 1.5 s | 0 Geheimnisse im Inhalt |
+
+Gesamt: ABGEWIESEN

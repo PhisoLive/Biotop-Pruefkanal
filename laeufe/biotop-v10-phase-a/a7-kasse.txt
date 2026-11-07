@@ -1,0 +1,11 @@
+# A-7 Kasse Phase A (Grenze 3 €)
+Modellaufrufe in Phase A: 0. Ohne Schlüssel ist kein bezahlter OpenRouter-Aufruf möglich:
+$ grep -c '^OPENROUTER_API_KEY=.\+' /srv/biotop/.env
+0
+$ ls /srv/biotop/daten/   (noch keine Kassen-Datenbank, keine Buchung)
+total 8
+drwx------  2 root root 4096 Nov  7 13:59 .
+drwxr-xr-x 10 root root 4096 Nov  7 15:15 ..
+
+Ist Phase A: 0,00 € von 3 €. Bestätigung über den Verbrauchszähler des neuen OpenRouter-Schlüssels folgt nach H1 (BERICHT-02).
+Stand: 2026-11-07T14:25:52Z

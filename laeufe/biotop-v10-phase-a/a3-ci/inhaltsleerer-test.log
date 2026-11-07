@@ -1,0 +1,305 @@
+pruefen	Set up job	﻿2026-11-07T14:15:24.2595022Z Current runner version: '2.338.2'
+##[group]Runner Image Provisioner
+Hosted Compute Agent
+Version: 20261028.624
+Commit: 54898b74c23fde5556c9b3c3a2290865feef0dfe
+Build Date: 2026-10-28T21:51:42Z
+Worker ID: {1b98d6bb-b985-4df7-93f8-0ea8d523bfe5}
+Region: westus3
+Cloud: Azure
+##[endgroup]
+##[group]Operating System
+Ubuntu
+24.04.5
+LTS
+##[endgroup]
+##[group]Runner Image
+Image: ubuntu-24.04
+Version: 20261101.360.1
+Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261101.360/images/ubuntu/Ubuntu2404-Readme.md
+Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261101.360
+##[endgroup]
+##[group]GITHUB_TOKEN Permissions
+Contents: read
+Metadata: read
+Packages: read
+##[endgroup]
+Secret source: Actions
+Cache mode: write
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+Complete job name: pruefen
+pruefen	Run actions/checkout@v4	﻿2026-11-07T14:15:26.3229917Z ##[group]Run actions/checkout@v4
+with:
+  fetch-depth: 0
+  repository: PhisoLive/Biotop-System
+  token: ***
+  ssh-strict: true
+  ssh-user: git
+  persist-credentials: true
+  clean: true
+  sparse-checkout-cone-mode: true
+  fetch-tags: false
+  show-progress: true
+  lfs: false
+  submodules: false
+  set-safe-directory: true
+  allow-unsafe-pr-checkout: false
+##[endgroup]
+Syncing repository: PhisoLive/Biotop-System
+##[group]Getting Git version info
+Working directory is '/home/runner/work/Biotop-System/Biotop-System'
+[command]/usr/bin/git version
+git version 2.56.0
+##[endgroup]
+Temporarily overriding HOME='/home/runner/work/_temp/9a35c82e-eb65-496f-b7a9-f2cd64e08cc4' before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/Biotop-System/Biotop-System
+Deleting the contents of '/home/runner/work/Biotop-System/Biotop-System'
+##[group]Initializing the repository
+[command]/usr/bin/git init /home/runner/work/Biotop-System/Biotop-System
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: will change to "main" in Git 3.0. To configure the initial branch name
+hint: to use in all of your new repositories, which will suppress this warning,
+hint: call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+hint:
+hint: Disable this message with "git config set advice.defaultBranchName false"
+Initialized empty Git repository in /home/runner/work/Biotop-System/Biotop-System/.git/
+[command]/usr/bin/git remote add origin https://github.com/PhisoLive/Biotop-System
+##[endgroup]
+##[group]Disabling automatic garbage collection
+[command]/usr/bin/git config --local gc.auto 0
+##[endgroup]
+##[group]Setting up auth
+[command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+[command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+[command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+[command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+[command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+##[endgroup]
+##[group]Fetching the repository
+[command]/usr/bin/git -c protocol.version=2 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*
+From https://github.com/PhisoLive/Biotop-System
+ * [new branch]      gegenprobe-ci/any       -> origin/gegenprobe-ci/any
+ * [new branch]      gegenprobe-ci/architektur-siegelpfad -> origin/gegenprobe-ci/architektur-siegelpfad
+ * [new branch]      gegenprobe-ci/doppelung -> origin/gegenprobe-ci/doppelung
+ * [new branch]      gegenprobe-ci/funktion-zu-lang -> origin/gegenprobe-ci/funktion-zu-lang
+ * [new branch]      gegenprobe-ci/inhaltsleerer-test -> origin/gegenprobe-ci/inhaltsleerer-test
+ * [new branch]      gegenprobe-ci/komplexitaet -> origin/gegenprobe-ci/komplexitaet
+ * [new branch]      gegenprobe-ci/ungenutzter-export -> origin/gegenprobe-ci/ungenutzter-export
+ * [new branch]      gegenprobe-ci/zyklus    -> origin/gegenprobe-ci/zyklus
+ * [new branch]      main                    -> origin/main
+[command]/usr/bin/git branch --list --remote origin/gegenprobe-ci/inhaltsleerer-test
+  origin/gegenprobe-ci/inhaltsleerer-test
+[command]/usr/bin/git rev-parse refs/remotes/origin/gegenprobe-ci/inhaltsleerer-test
+3ecf7c41b0c2badbc94e80027c4e8d40f2ba6239
+##[endgroup]
+##[group]Determining the checkout info
+##[endgroup]
+[command]/usr/bin/git sparse-checkout disable
+[command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+##[group]Checking out the ref
+[command]/usr/bin/git checkout --progress --force -B gegenprobe-ci/inhaltsleerer-test refs/remotes/origin/gegenprobe-ci/inhaltsleerer-test
+Switched to a new branch 'gegenprobe-ci/inhaltsleerer-test'
+branch 'gegenprobe-ci/inhaltsleerer-test' set up to track 'origin/gegenprobe-ci/inhaltsleerer-test'.
+##[endgroup]
+[command]/usr/bin/git log -1 --format=%H
+3ecf7c41b0c2badbc94e80027c4e8d40f2ba6239
+pruefen	Run actions/setup-node@v4	﻿2026-11-07T14:15:27.8102877Z ##[group]Run actions/setup-node@v4
+with:
+  node-version: 24.21.0
+  cache: npm
+  always-auth: false
+  check-latest: false
+  token: ***
+##[endgroup]
+Attempting to download 24.21.0...
+(node:2009) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Acquiring 24.21.0 - x64 from https://github.com/actions/node-versions/releases/download/24.21.0-34304089047/node-24.21.0-linux-x64.tar.gz
+Extracting ...
+[command]/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/16865ec4-a146-4cbb-bc9b-b0f2f8ce3552 -f /home/runner/work/_temp/637d5bb8-304b-4df8-9d78-38b3fb88520f
+Adding to the cache ...
+##[group]Environment details
+node: v24.21.0
+npm: 11.19.0
+yarn: 1.22.22
+##[endgroup]
+[command]/opt/hostedtoolcache/node/24.21.0/x64/bin/npm config get cache
+/home/runner/.npm
+Cache hit for: node-cache-Linux-x64-npm-9991046a55ab4bebbe7af1210bdd9e3185516b029f29ef4b0e4251fb91fd7022
+(node:2009) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+Received 52902075 of 61290683 (86.3%), 50.4 MBs/sec
+Received 61290683 of 61290683 (100.0%), 55.2 MBs/sec
+Cache Size: ~58 MB (61290683 B)
+[command]/usr/bin/tar -xf /home/runner/work/_temp/310b39a0-e0e5-4daf-88c2-d6af4f67a32d/cache.tzst -P -C /home/runner/work/Biotop-System/Biotop-System --use-compress-program unzstd
+Cache restored successfully
+Cache restored from key: node-cache-Linux-x64-npm-9991046a55ab4bebbe7af1210bdd9e3185516b029f29ef4b0e4251fb91fd7022
+pruefen	Run npm ci	﻿2026-11-07T14:15:39.1366223Z ##[group]Run npm ci
+^[[36;1mnpm ci^[[0m
+shell: /usr/bin/bash -e {0}
+##[endgroup]
+
+> biotop-system@0.1.0 prepare
+> git config core.hooksPath .githooks
+
+
+added 432 packages, and audited 433 packages in 6s
+
+120 packages are looking for funding
+  run `npm fund` for details
+
+15 moderate severity vulnerabilities
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues possible (including breaking changes), run:
+  npm audit fix --force
+
+Some issues need review, and may require choosing
+a different dependency.
+
+Run `npm audit` for details.
+pruefen	Regeln aus 3.5	﻿2026-11-07T14:15:45.5118208Z ##[group]Run node scripts/pruefen.ts --bericht=reports/pruefbericht.md
+^[[36;1mnode scripts/pruefen.ts --bericht=reports/pruefbericht.md^[[0m
+shell: /usr/bin/bash -e {0}
+##[endgroup]
+### typen – bestanden
+62 Dateien, 0 Typfehler
+
+
+### lint – bestanden
+64 Dateien, 0 Fehler, 0 Warnungen
+
+
+### format – bestanden
+Checking formatting...
+All matched files use Prettier code style!
+
+### doppelungen – bestanden
+4539 Zeilen, Doppelungen 0 %, 0 Klone
+^[[90mNo duplicates found.^[[39m
+^[[90m┌────────────┬────────────────┬─────────────┬──────────────┬──────────────┬──────────────────┬───────────────────┐^[[39m
+^[[90m│^[[39m^[[31m Format     ^[[39m^[[90m│^[[39m^[[31m Files analyzed ^[[39m^[[90m│^[[39m^[[31m Total lines ^[[39m^[[90m│^[[39m^[[31m Total tokens ^[[39m^[[90m│^[[39m^[[31m Clones found ^[[39m^[[90m│^[[39m^[[31m Duplicated lines ^[[39m^[[90m│^[[39m^[[31m Duplicated tokens ^[[39m^[[90m│^[[39m
+^[[90m├────────────┼────────────────┼─────────────┼──────────────┼──────────────┼──────────────────┼───────────────────┤^[[39m
+^[[90m│^[[39m typescript ^[[90m│^[[39m 57             ^[[90m│^[[39m 4539        ^[[90m│^[[39m 35296        ^[[90m│^[[39m 0            ^[[90m│^[[39m 0 (0.00%)        ^[[90m│^[[39m 0 (0.00%)         ^[[90m│^[[39m
+^[[90m├────────────┼────────────────┼─────────────┼──────────────┼──────────────┼──────────────────┼───────────────────┤^[[39m
+^[[90m│^[[39m ^[[1mTotal:^[[22m     ^[[90m│^[[39m 57             ^[[90m│^[[39m 4539        ^[[90m│^[[39m 35296        ^[[90m│^[[39m 0            ^[[90m│^[[39m 0 (0.00%)        ^[[90m│^[[39m 0 (0.00%)         ^[[90m│^[[39m
+^[[90m└────────────┴────────────────┴─────────────┴──────────────┴──────────────┴──────────────────┴───────────────────┘^[[39m
+^[[90mFound 0 clones.^[[39m
+^[[32mJSON report saved to reports/jscpd/jscpd-report.json^[[39m
+^[[90mtime: 15.956ms^[[39m
+
+### architektur – bestanden
+66 Module, 0 Verstöße
+
+
+### ungenutzt – bestanden
+
+
+### tests – bestanden
+273 Tests, 0 fehlgeschlagen; Abdeckung Zeilen 100 %, Zweige 100 %
+ ^[[32m✓^[[39m test/quality/verdict.test.ts ^[[2m(^[[22m^[[2m6 tests^[[22m^[[2m)^[[22m^[[32m 5^[[2mms^[[22m^[[39m
+ ^[[32m✓^[[39m test/infra/env.test.ts ^[[2m(^[[22m^[[2m7 tests^[[22m^[[2m)^[[22m^[[32m 6^[[2mms^[[22m^[[39m
+ ^[[32m✓^[[39m test/core/errors.test.ts ^[[2m(^[[22m^[[2m5 tests^[[22m^[[2m)^[[22m^[[32m 4^[[2mms^[[22m^[[39m
+ ^[[32m✓^[[39m test/core/flow.test.ts ^[[2m(^[[22m^[[2m7 tests^[[22m^[[2m)^[[22m^[[32m 5^[[2mms^[[22m^[[39m
+ ^[[32m✓^[[39m test/builder/claude-cli.test.ts ^[[2m(^[[22m^[[2m8 tests^[[22m^[[2m)^[[22m^[[32m 6^[[2mms^[[22m^[[39m
+ ^[[32m✓^[[39m test/seal/paths.test.ts ^[[2m(^[[22m^[[2m19 tests^[[22m^[[2m)^[[22m^[[32m 6^[[2mms^[[22m^[[39m
+ ^[[32m✓^[[39m test/core/add-up.test.ts ^[[2m(^[[22m^[[2m1 test^[[22m^[[2m)^[[22m^[[32m 3^[[2mms^[[22m^[[39m
+
+^[[2m Test Files ^[[22m ^[[1m^[[32m22 passed^[[39m^[[22m^[[90m (22)^[[39m
+^[[2m      Tests ^[[22m ^[[1m^[[32m273 passed^[[39m^[[22m^[[90m (273)^[[39m
+^[[2m   Start at ^[[22m 14:15:55
+^[[2m   Duration ^[[22m 4.76s^[[2m (tests 68%, worker 12%, transform 10%, import 10%)^[[22m
+
+^[[2m    Isolate ^[[22m ^[[33m22 workers spawned^[[39m^[[2m · ~82ms startup each (spawn + environment, per file)^[[22m
+^[[2m            ^[[22m ^[[2mat least ~1.72s faster with ^[[22m^[[33misolate: false^[[39m^[[2m — reuses workers across files instead of one per file^[[22m
+
+JSON report written to /home/runner/work/Biotop-System/Biotop-System/reports/vitest.json
+^[[34m % ^[[39m^[[2mCoverage report from ^[[22m^[[33mv8^[[39m
+
+=============================== Coverage summary ===============================
+Statements   : 100% ( 378/378 )
+Branches     : 100% ( 206/206 )
+Functions    : 100% ( 134/134 )
+Lines        : 100% ( 334/334 )
+================================================================================
+
+### mutation – abgewiesen
+1012 Mutanten, Mutationswert 98.72 % (Grenze 70 % gesamt und je Datei)
+src/core/add-up.ts: 0 %
+
+### audit – bestanden
+505 Abhängigkeiten, hoch 0, kritisch 0
+
+### geheimnisse – bestanden
+
+
+| Prüfung | Ergebnis | Gegenstand | Dauer | Regel |
+|---|---|---|---|---|
+| typen | BESTANDEN | 62 | 2.4 s | Typprüfung ohne Fehler |
+| lint | BESTANDEN | 64 | 4.1 s | Linter: 0 Fehler, 0 Warnungen (any, Länge, Parameter, Komplexität, Architektur-Literale) |
+| format | BESTANDEN | 61 | 1.4 s | Formatierer: 0 Abweichungen |
+| doppelungen | BESTANDEN | 4539 | 0.1 s | Doppelungen höchstens 2 % |
+| architektur | BESTANDEN | 66 | 0.6 s | 0 Zyklen, Modulgrenzen |
+| ungenutzt | BESTANDEN | 61 | 0.7 s | 0 ungenutzte Dateien, Exporte, Abhängigkeiten |
+| tests | BESTANDEN | 273 | 5.2 s | Tests grün; Kern ≥ 90 % Zeilen, ≥ 85 % Zweige |
+| mutation | ABGEWIESEN | 1012 | 160.6 s | Kern: Mutationswert ≥ 70 % |
+| audit | BESTANDEN | 505 | 1.4 s | 0 hohe oder kritische Sicherheitsbefunde |
+| geheimnisse | BESTANDEN | 61 | 0.3 s | 0 Geheimnisse im Inhalt |
+
+Gesamt: ABGEWIESEN
+##[error]Process completed with exit code 1.
+pruefen	Run actions/upload-artifact@v4	﻿2026-11-07T14:18:42.5841449Z ##[group]Run actions/upload-artifact@v4
+with:
+  name: pruefbericht
+  path: reports/
+  include-hidden-files: true
+  if-no-files-found: warn
+  compression-level: 6
+  overwrite: false
+##[endgroup]
+(node:6578) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+With the provided path, there will be 5 files uploaded
+Artifact name is valid!
+Root directory input is valid!
+Beginning upload of artifact content to blob storage
+(node:6578) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+Uploaded bytes 114536
+Finished uploading artifact content to blob storage!
+SHA256 digest of uploaded artifact zip is 9da33825996f0e268269266443557fd33c0c12d7dd52de64effc151db5695df5
+Finalizing artifact upload
+Artifact pruefbericht.zip successfully finalized. Artifact ID 13577059969
+Artifact pruefbericht has been successfully uploaded! Final size is 114536 bytes. Artifact ID is 13577059969
+Artifact download URL: https://github.com/PhisoLive/Biotop-System/actions/runs/42380733967/artifacts/13577059969
+pruefen	Post Run actions/checkout@v4	﻿2026-11-07T14:18:43.9555676Z Post job cleanup.
+[command]/usr/bin/git version
+git version 2.56.0
+Temporarily overriding HOME='/home/runner/work/_temp/bf6e2750-e4f3-4d78-8102-fb18092d6521' before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/Biotop-System/Biotop-System
+[command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+[command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+http.https://github.com/.extraheader
+[command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+[command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+[command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+pruefen	Complete job	﻿2026-11-07T14:18:44.1829953Z Cleaning up orphan processes
+##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-node@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

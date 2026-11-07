@@ -1,0 +1,87 @@
+# A-4 Gerüst (Stand Commit ace3f70, nur committete Dateien)
+
+## Organmodule mit Schnittstelle (git ls-files src/*/port.ts)
+src/builder/port.ts
+src/chamber/port.ts
+src/examiner/port.ts
+src/memory/port.ts
+src/prosecutor/port.ts
+src/seal/port.ts
+src/sealmaster/port.ts
+src/thinker/port.ts
+src/treasury/port.ts
+
+## Alle Systemcode-Dateien unter src/
+  src/builder/claude-cli.ts
+  src/builder/port.ts
+  src/chamber/port.ts
+  src/core/card.ts
+  src/core/errors.ts
+  src/core/flow.ts
+  src/core/organs.ts
+  src/core/types.ts
+  src/core/verdict.ts
+  src/core/work-loop.ts
+  src/core/work-run.ts
+  src/examiner/port.ts
+  src/infra/env.ts
+  src/infra/json.ts
+  src/infra/process.ts
+  src/main.ts
+  src/memory/port.ts
+  src/models/key-info.ts
+  src/prosecutor/port.ts
+  src/quality/checks.ts
+  src/quality/mutation-score.ts
+  src/quality/parsers.ts
+  src/quality/run-checks.ts
+  src/quality/secrets.ts
+  src/quality/verdict.ts
+  src/seal/digest.ts
+  src/seal/paths.ts
+  src/seal/port.ts
+  src/sealmaster/port.ts
+  src/thinker/port.ts
+  src/treasury/exchange.ts
+  src/treasury/port.ts
+  src/treasury/treasury.ts
+
+## Glossartafel
+docs/glossar.md: 71 Tabellenzeilen (inkl. Kopf)
+
+## Architekturentscheidungen
+docs/entscheidungen/0001-sprache-typescript.md
+docs/entscheidungen/0002-datenhaltung-sqlite.md
+docs/entscheidungen/0003-modulgrenzen.md
+docs/entscheidungen/0004-kern-und-systemcode.md
+docs/entscheidungen/0005-pruefwerkzeuge.md
+docs/entscheidungen/0006-kammer.md
+docs/entscheidungen/0007-pruefung-von-aussen.md
+docs/entscheidungen/0008-siegel-und-eichung.md
+docs/entscheidungen/0009-probenfuehrer-material.md
+
+## Architekturregeln (maschinell, dependency-cruiser)
+  name: 'kein-zyklus',
+  name: 'nur-baumeister-startet-claude',
+  name: 'nur-siegel-modul-kennt-siegelpfade',
+  name: 'kern-ohne-organe',
+  name: 'organe-unter-sich-nur-ueber-schnittstellen',
+  name: 'prozesse-nur-ueber-infra',
+  name: 'keine-verwaisten-module',
+
+Befehlsprotokoll-Prüfung A-4 (Archivrepo PhisoLive/Biotop weder geklont noch gelesen)
+Quelle: Sitzungsprotokoll und Unteragenten-Protokolle, 11 Dateien
+Geprüfte Werkzeugaufrufe (Bash, Read, WebFetch, Grep, Glob, Agent): 295
+Suchmuster: PhisoLive/Biotop(?![-\w])|Biotop\.git|github\.com/PhisoLive/Biotop(?![-\w]) (ausgenommen: Aufrufe dieser Prüfung selbst)
+Treffer: 0
+Gegenprobe: Muster gegen "git clone https://github.com/PhisoLive/Biotop.git": True
+Gegenprobe: Muster gegen "PhisoLive/Biotop-System" (erlaubt): False
+
+## Kein Klon im Dateisystem
+$ ls -d /srv/werkstatt/projekte/*/
+/srv/werkstatt/projekte/biotop-pruefkanal/
+/srv/werkstatt/projekte/biotop-system/
+/srv/werkstatt/projekte/luemina-betrieb/
+/srv/werkstatt/projekte/luemina-einrichtung/
+$ find / -xdev -type d -iname "Biotop" 2>/dev/null (ohne /proc)
+(Ende der Liste)

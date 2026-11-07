@@ -1,0 +1,89 @@
+Gegenprobe typfehler (Typprüfung ohne Fehler)
+Exit-Code git commit: 1
+
+### typen – abgewiesen
+60 Dateien, 1 Typfehler
+src/core/flow.ts(49,14): error TS2322: Type 'string' is not assignable to type 'number'.
+
+### lint – bestanden
+62 Dateien, 0 Fehler, 0 Warnungen
+
+
+### format – bestanden
+Checking formatting...
+All matched files use Prettier code style!
+
+### doppelungen – bestanden
+4517 Zeilen, Doppelungen 0 %, 0 Klone
+[90mNo duplicates found.[39m
+[90m┌────────────┬────────────────┬─────────────┬──────────────┬──────────────┬──────────────────┬───────────────────┐[39m
+[90m│[39m[31m Format     [39m[90m│[39m[31m Files analyzed [39m[90m│[39m[31m Total lines [39m[90m│[39m[31m Total tokens [39m[90m│[39m[31m Clones found [39m[90m│[39m[31m Duplicated lines [39m[90m│[39m[31m Duplicated tokens [39m[90m│[39m
+[90m├────────────┼────────────────┼─────────────┼──────────────┼──────────────┼──────────────────┼───────────────────┤[39m
+[90m│[39m typescript [90m│[39m 57             [90m│[39m 4517        [90m│[39m 35270        [90m│[39m 0            [90m│[39m 0 (0.00%)        [90m│[39m 0 (0.00%)         [90m│[39m
+[90m├────────────┼────────────────┼─────────────┼──────────────┼──────────────┼──────────────────┼───────────────────┤[39m
+[90m│[39m [1mTotal:[22m     [90m│[39m 57             [90m│[39m 4517        [90m│[39m 35270        [90m│[39m 0            [90m│[39m 0 (0.00%)        [90m│[39m 0 (0.00%)         [90m│[39m
+[90m└────────────┴────────────────┴─────────────┴──────────────┴──────────────┴──────────────────┴───────────────────┘[39m
+[90mFound 0 clones.[39m
+[32mJSON report saved to reports/jscpd/jscpd-report.json[39m
+[90mtime: 77.150ms[39m
+
+### architektur – bestanden
+65 Module, 0 Verstöße
+
+
+### ungenutzt – abgewiesen
+Unused exports (1)
+wrong  src/core/flow.ts:49:14
+
+### tests – bestanden
+272 Tests, 0 fehlgeschlagen; Abdeckung Zeilen 100 %, Zweige 100 %
+   ✓ echtes secretlint: Gegenprobe findet beide eingepflanzten Schlüssel 3477ms
+   ✓ echtes secretlint: leeres Verzeichnis ist eine Prüfung ohne Gegenstand 3257ms
+ ✓ test/core/flow.test.ts (7 tests) 80ms
+ ✓ test/infra/env.test.ts (7 tests) 37ms
+ ✓ test/quality/verdict.test.ts (6 tests) 46ms
+ ✓ test/builder/claude-cli.test.ts (8 tests) 54ms
+ ✓ test/core/errors.test.ts (5 tests) 19ms
+
+ Test Files  21 passed (21)
+      Tests  272 passed (272)
+   Start at  14:58:23
+   Duration  14.87s (tests 52%, transform 28%, worker 10%, import 10%)
+
+    Isolate  21 workers spawned · ~1.13s startup each (spawn + environment, per file)
+             at least ~3.60s faster with isolate: false — reuses workers across files instead of one per file
+
+JSON report written to /tmp/biotop-pruefen-G16IBw/reports/vitest.json
+[34m % [39m[2mCoverage report from [22m[33mv8[39m
+
+=============================== Coverage summary ===============================
+Statements   : 100% ( 376/376 )
+Branches     : 100% ( 206/206 )
+Functions    : 100% ( 132/132 )
+Lines        : 100% ( 333/333 )
+================================================================================
+
+### mutation – bestanden
+1006 Mutanten, Mutationswert 98.91 % (Grenze 70 % gesamt und je Datei)
+
+
+### audit – bestanden
+505 Abhängigkeiten, hoch 0, kritisch 0
+
+### geheimnisse – bestanden
+
+
+| Prüfung | Ergebnis | Gegenstand | Dauer | Regel |
+|---|---|---|---|---|
+| typen | ABGEWIESEN | 60 | 6.3 s | Typprüfung ohne Fehler |
+| lint | BESTANDEN | 62 | 19.9 s | Linter: 0 Fehler, 0 Warnungen (any, Länge, Parameter, Komplexität, Architektur-Literale) |
+| format | BESTANDEN | 59 | 5.4 s | Formatierer: 0 Abweichungen |
+| doppelungen | BESTANDEN | 4517 | 0.2 s | Doppelungen höchstens 2 % |
+| architektur | BESTANDEN | 65 | 2 s | 0 Zyklen, Modulgrenzen |
+| ungenutzt | ABGEWIESEN | 59 | 3 s | 0 ungenutzte Dateien, Exporte, Abhängigkeiten |
+| tests | BESTANDEN | 272 | 17.1 s | Tests grün; Kern ≥ 90 % Zeilen, ≥ 85 % Zweige |
+| mutation | BESTANDEN | 1006 | 39.3 s | Kern: Mutationswert ≥ 70 % |
+| audit | BESTANDEN | 505 | 5.4 s | 0 hohe oder kritische Sicherheitsbefunde |
+| geheimnisse | BESTANDEN | 59 | 0.8 s | 0 Geheimnisse im Inhalt |
+
+Gesamt: ABGEWIESEN

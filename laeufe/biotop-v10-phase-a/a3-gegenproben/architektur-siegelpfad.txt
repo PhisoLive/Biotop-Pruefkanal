@@ -1,0 +1,90 @@
+Gegenprobe architektur-siegelpfad (nur das Siegel-Modul kennt Siegelpfade)
+Exit-Code git commit: 1
+
+### typen – bestanden
+60 Dateien, 0 Typfehler
+
+
+### lint – bestanden
+62 Dateien, 0 Fehler, 0 Warnungen
+
+
+### format – bestanden
+Checking formatting...
+All matched files use Prettier code style!
+
+### doppelungen – bestanden
+4517 Zeilen, Doppelungen 0 %, 0 Klone
+[90mNo duplicates found.[39m
+[90m┌────────────┬────────────────┬─────────────┬──────────────┬──────────────┬──────────────────┬───────────────────┐[39m
+[90m│[39m[31m Format     [39m[90m│[39m[31m Files analyzed [39m[90m│[39m[31m Total lines [39m[90m│[39m[31m Total tokens [39m[90m│[39m[31m Clones found [39m[90m│[39m[31m Duplicated lines [39m[90m│[39m[31m Duplicated tokens [39m[90m│[39m
+[90m├────────────┼────────────────┼─────────────┼──────────────┼──────────────┼──────────────────┼───────────────────┤[39m
+[90m│[39m typescript [90m│[39m 57             [90m│[39m 4517        [90m│[39m 35269        [90m│[39m 0            [90m│[39m 0 (0.00%)        [90m│[39m 0 (0.00%)         [90m│[39m
+[90m├────────────┼────────────────┼─────────────┼──────────────┼──────────────┼──────────────────┼───────────────────┤[39m
+[90m│[39m [1mTotal:[22m     [90m│[39m 57             [90m│[39m 4517        [90m│[39m 35269        [90m│[39m 0            [90m│[39m 0 (0.00%)        [90m│[39m 0 (0.00%)         [90m│[39m
+[90m└────────────┴────────────────┴─────────────┴──────────────┴──────────────┴──────────────────┴───────────────────┘[39m
+[90mFound 0 clones.[39m
+[32mJSON report saved to reports/jscpd/jscpd-report.json[39m
+[90mtime: 71.447ms[39m
+
+### architektur – abgewiesen
+65 Module, 2 Verstöße
+kern-ohne-organe: src/core/flow.ts → src/seal/paths.ts
+nur-siegel-modul-kennt-siegelpfade: src/core/flow.ts → src/seal/paths.ts
+
+### ungenutzt – abgewiesen
+Unused exports (1)
+sealDir  src/core/flow.ts:49:10
+
+### tests – bestanden
+272 Tests, 0 fehlgeschlagen; Abdeckung Zeilen 100 %, Zweige 100 %
+ ✓ test/infra/json.test.ts (29 tests) 194ms
+ ✓ test/builder/claude-cli.test.ts (8 tests) 143ms
+ ✓ test/quality/verdict.test.ts (6 tests) 157ms
+ ✓ test/seal/paths.test.ts (19 tests) 83ms
+ ✓ test/core/errors.test.ts (5 tests) 64ms
+ ✓ test/core/flow.test.ts (7 tests) 40ms
+ ✓ test/infra/env.test.ts (7 tests) 39ms
+
+ Test Files  21 passed (21)
+      Tests  272 passed (272)
+   Start at  14:56:45
+   Duration  12.94s (tests 50%, transform 27%, worker 12%, import 11%)
+
+    Isolate  21 workers spawned · ~1.08s startup each (spawn + environment, per file)
+             at least ~3.45s faster with isolate: false — reuses workers across files instead of one per file
+
+JSON report written to /tmp/biotop-pruefen-M7bjLY/reports/vitest.json
+[34m % [39m[2mCoverage report from [22m[33mv8[39m
+
+=============================== Coverage summary ===============================
+Statements   : 100% ( 375/375 )
+Branches     : 100% ( 206/206 )
+Functions    : 100% ( 132/132 )
+Lines        : 100% ( 332/332 )
+================================================================================
+
+### mutation – bestanden
+1005 Mutanten, Mutationswert 99 % (Grenze 70 % gesamt und je Datei)
+
+
+### audit – bestanden
+505 Abhängigkeiten, hoch 0, kritisch 0
+
+### geheimnisse – bestanden
+
+
+| Prüfung | Ergebnis | Gegenstand | Dauer | Regel |
+|---|---|---|---|---|
+| typen | BESTANDEN | 60 | 10.1 s | Typprüfung ohne Fehler |
+| lint | BESTANDEN | 62 | 22.2 s | Linter: 0 Fehler, 0 Warnungen (any, Länge, Parameter, Komplexität, Architektur-Literale) |
+| format | BESTANDEN | 59 | 7.3 s | Formatierer: 0 Abweichungen |
+| doppelungen | BESTANDEN | 4517 | 0.2 s | Doppelungen höchstens 2 % |
+| architektur | ABGEWIESEN | 65 | 2.4 s | 0 Zyklen, Modulgrenzen |
+| ungenutzt | ABGEWIESEN | 59 | 3 s | 0 ungenutzte Dateien, Exporte, Abhängigkeiten |
+| tests | BESTANDEN | 272 | 14.5 s | Tests grün; Kern ≥ 90 % Zeilen, ≥ 85 % Zweige |
+| mutation | BESTANDEN | 1005 | 37.4 s | Kern: Mutationswert ≥ 70 % |
+| audit | BESTANDEN | 505 | 6 s | 0 hohe oder kritische Sicherheitsbefunde |
+| geheimnisse | BESTANDEN | 59 | 1.3 s | 0 Geheimnisse im Inhalt |
+
+Gesamt: ABGEWIESEN

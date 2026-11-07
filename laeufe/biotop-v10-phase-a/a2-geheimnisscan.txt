@@ -1,0 +1,36 @@
+# A-2 Geheimnisscan über den ganzen Inhalt des Systemrepos (Stand HEAD) mit Gegenprobe
+$ git archive ace3f70 | tar -x -C <kopie>; node scripts/geheimnisscan.ts --verzeichnis=<kopie> --gegenprobe
+Scan: 100 Dateien, 0 Befunde
+Gegenprobe mit eingepflanzten Testschlüsseln: 102 Dateien, 4 Befunde
+  <gegenprobe-kopie>/eingepflanzt/.env: @secretlint/secretlint-rule-pattern
+  <gegenprobe-kopie>/eingepflanzt/.env: @secretlint/secretlint-rule-pattern
+  <gegenprobe-kopie>/eingepflanzt/.env: @secretlint/secretlint-rule-pattern
+  <gegenprobe-kopie>/eingepflanzt/notiz.md: @secretlint/secretlint-rule-pattern
+Gegenprobe: 2 von 2 eingepflanzten Dateien erkannt.
+Geheimnisscan: 0 Befunde – Push erlaubt.
+Exit-Code: 0
+
+# A-2 Geheimnis- und Adressscan des Prüfkanals mit Gegenprobe (Filter mit Serveradresse, Abholstelle, Tailscale, E-Mail)
+Scan: 3 Dateien, 0 Befunde
+Gegenprobe mit eingepflanzten Testschlüsseln: 5 Dateien, 4 Befunde
+  <gegenprobe-kopie>/eingepflanzt/.env: @secretlint/secretlint-rule-pattern
+  <gegenprobe-kopie>/eingepflanzt/.env: @secretlint/secretlint-rule-pattern
+  <gegenprobe-kopie>/eingepflanzt/.env: @secretlint/secretlint-rule-pattern
+  <gegenprobe-kopie>/eingepflanzt/notiz.md: @secretlint/secretlint-rule-pattern
+Gegenprobe: 2 von 2 eingepflanzten Dateien erkannt.
+Geheimnisscan: 0 Befunde – Push erlaubt.
+
+# A-2 Gegenprobe Adressfilter: Kopie mit eingepflanzter Serveradresse
+Scan: 4 Dateien, 1 Befunde
+  <kopie>/adresse.md: @secretlint/secretlint-rule-pattern
+Geheimnisscan: ABGEWIESEN.
+
+# A-2 Push nur bei 0 Befunden: pre-push-Hooks
+$ cat biotop-system/.githooks/pre-push
+#!/bin/sh
+# A-2: Vor jedem Push Geheimnisscan über den ganzen Inhalt und den Verlauf des Push-Bereichs.
+exec node scripts/geheimnisscan.ts --push
+$ cat biotop-pruefkanal/.githooks/pre-push (Pfad des Filters geschwärzt)
+#!/bin/sh
+# Prüfkanal: vor jedem Push Geheimnis- und Adressscan über den ganzen Inhalt (A-2, Abschnitt 8).
+exec node /srv/werkstatt/projekte/biotop-system/scripts/geheimnisscan.ts --push --filter=<filterdatei>

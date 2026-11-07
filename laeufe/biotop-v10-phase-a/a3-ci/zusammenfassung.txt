@@ -1,0 +1,8 @@
+inhaltsleerer-test | Lauf 42380733967 | | mutation | ABGEWIESEN | 1012 | 160.6 s | Kern: Mutationswert ≥ 70 % | | Befund 'src/core/add-up.ts' im Log: 1
+architektur-siegelpfad | Lauf 42380721782 | | architektur | ABGEWIESEN | 64 | 0.6 s | 0 Zyklen, Modulgrenzen | | Befund 'nur-siegel-modul-kennt-siegelpfade' im Log: 1
+ungenutzter-export | Lauf 42380709184 | | ungenutzt | ABGEWIESEN | 59 | 1 s | 0 ungenutzte Dateien, Exporte, Abhängigkeiten | | Befund 'neverUsed' im Log: 1
+any | Lauf 42380701093 | | lint | ABGEWIESEN | 62 | 5.8 s | Linter: 0 Fehler, 0 Warnungen (any, Länge, Parameter, Komplexität, Architektur-Literale) | | Befund 'no-explicit-any' im Log: 1
+zyklus | Lauf 42380696225 | | architektur | ABGEWIESEN | 64 | 0.7 s | 0 Zyklen, Modulgrenzen | | Befund 'kein-zyklus' im Log: 1
+doppelung | Lauf 42380689987 | | doppelungen | ABGEWIESEN | 4744 | 0.1 s | Doppelungen höchstens 2 % | | Befund 'Klone' im Log: 1
+komplexitaet | Lauf 42380685174 | | lint | ABGEWIESEN | 62 | 6.2 s | Linter: 0 Fehler, 0 Warnungen (any, Länge, Parameter, Komplexität, Architektur-Literale) | | Befund 'complexity' im Log: 1
+funktion-zu-lang | Lauf 42380682080 | | lint | ABGEWIESEN | 62 | 7.2 s | Linter: 0 Fehler, 0 Warnungen (any, Länge, Parameter, Komplexität, Architektur-Literale) | | Befund 'max-lines-per-function' im Log: 1
