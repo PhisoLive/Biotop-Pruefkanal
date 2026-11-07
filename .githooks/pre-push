@@ -1,0 +1,3 @@
+#!/bin/sh
+# Prüfkanal: vor jedem Push Geheimnis- und Adressscan über den ganzen Inhalt (A-2, Abschnitt 8).
+exec node /srv/werkstatt/projekte/biotop-system/scripts/geheimnisscan.ts --push --filter=/srv/biotop/pruefkanal-filter.json
