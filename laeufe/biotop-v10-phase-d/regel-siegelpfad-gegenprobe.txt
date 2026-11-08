@@ -1,0 +1,9 @@
+# Siegelpfad-Regel an Entscheidung 0003 angeglichen (Literale mit „siegel/“ oder Endung „/siegel“)
+Vorher traf /siegel(\/|$)/i auch das Wort „Siegel“ am Textende; jetzt /siegel\/|\/siegel$/i.
+Eigener Fehler beim ersten Versuch: falsches Escaping ließ die Regel nichts mehr finden; die Gegenprobe zeigte es, behoben.
+
+Literal '/srv/biotop/siegel' außerhalb src/seal -> ESLint-Befunde: 1
+Literal 'siegel/karte' außerhalb src/seal -> ESLint-Befunde: 1
+Literal '/x/Siegel/' außerhalb src/seal -> ESLint-Befunde: 1
+Literal 'Das Siegel' außerhalb src/seal -> ESLint-Befunde: 0
+Literal 'Siegel' außerhalb src/seal -> ESLint-Befunde: 0

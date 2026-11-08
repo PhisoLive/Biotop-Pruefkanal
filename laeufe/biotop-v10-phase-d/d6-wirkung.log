@@ -1,0 +1,371 @@
+D-6 Wirkungstest: Server auf 127.0.0.1, Tafel mit 39 Wirkungstests
+Inventur: 367 Bedienelemente auf 20 Bildschirmen
+✓ [Start] navigation · a | / | Start · 2887 ms · 4 Belege
+✓ [Start] navigation · a | /werkbank | Werkbank · 2891 ms · 4 Belege
+✓ [Start] navigation · a | /gedaechtnis | Gedächtnis · 3508 ms · 4 Belege
+✓ [Start] navigation · a | /pruefstand | Prüfstand · 3608 ms · 4 Belege
+✓ [Start] navigation · a | /werk-null | Werk Null · 2170 ms · 4 Belege
+✓ [Start] navigation · a | /kasse | Kasse · 2298 ms · 4 Belege
+✓ [Start] navigation · a | /einstellungen | Einstellungen · 2702 ms · 4 Belege
+✓ [Start] navigation · a | /begriffe | Begriffe · 2919 ms · 4 Belege
+✓ [Werk: Rückfragen] navigation · a | / | Start · 4072 ms · 4 Belege
+✓ [Werk: Rückfragen] navigation · a | /werkbank | Werkbank · 2773 ms · 4 Belege
+✓ [Werk: Rückfragen] navigation · a | /gedaechtnis | Gedächtnis · 2495 ms · 4 Belege
+✓ [Werk: Rückfragen] navigation · a | /pruefstand | Prüfstand · 2291 ms · 4 Belege
+✓ [Werk: Rückfragen] navigation · a | /werk-null | Werk Null · 2448 ms · 4 Belege
+✓ [Werk: Rückfragen] navigation · a | /kasse | Kasse · 2485 ms · 4 Belege
+✓ [Werk: Rückfragen] navigation · a | /einstellungen | Einstellungen · 3063 ms · 4 Belege
+✓ [Werk: Rückfragen] navigation · a | /begriffe | Begriffe · 2497 ms · 4 Belege
+✓ [Werk: Entwürfe] navigation · a | / | Start · 2556 ms · 4 Belege
+✓ [Werk: Entwürfe] navigation · a | /werkbank | Werkbank · 2973 ms · 4 Belege
+✓ [Werk: Entwürfe] navigation · a | /gedaechtnis | Gedächtnis · 2795 ms · 4 Belege
+✓ [Werk: Entwürfe] navigation · a | /pruefstand | Prüfstand · 2802 ms · 4 Belege
+✓ [Werk: Entwürfe] navigation · a | /werk-null | Werk Null · 2808 ms · 4 Belege
+✓ [Werk: Entwürfe] navigation · a | /kasse | Kasse · 2721 ms · 4 Belege
+✓ [Werk: Entwürfe] navigation · a | /einstellungen | Einstellungen · 2402 ms · 4 Belege
+✓ [Werk: Entwürfe] navigation · a | /begriffe | Begriffe · 2202 ms · 4 Belege
+✓ [Werk: Richtungen] navigation · a | / | Start · 2633 ms · 4 Belege
+✓ [Werk: Richtungen] navigation · a | /werkbank | Werkbank · 2026 ms · 4 Belege
+✓ [Werk: Richtungen] navigation · a | /gedaechtnis | Gedächtnis · 2339 ms · 4 Belege
+✓ [Werk: Richtungen] navigation · a | /pruefstand | Prüfstand · 4076 ms · 4 Belege
+✓ [Werk: Richtungen] navigation · a | /werk-null | Werk Null · 3136 ms · 4 Belege
+✓ [Werk: Richtungen] navigation · a | /kasse | Kasse · 5541 ms · 4 Belege
+✓ [Werk: Richtungen] navigation · a | /einstellungen | Einstellungen · 6352 ms · 4 Belege
+✓ [Werk: Richtungen] navigation · a | /begriffe | Begriffe · 5552 ms · 4 Belege
+✓ [Werk: blinde Wahl offen] navigation · a | / | Start · 3325 ms · 4 Belege
+✓ [Werk: blinde Wahl offen] navigation · a | /werkbank | Werkbank · 2619 ms · 4 Belege
+✓ [Werk: blinde Wahl offen] navigation · a | /gedaechtnis | Gedächtnis · 3244 ms · 4 Belege
+✓ [Werk: blinde Wahl offen] navigation · a | /pruefstand | Prüfstand · 2272 ms · 4 Belege
+✓ [Werk: blinde Wahl offen] navigation · a | /werk-null | Werk Null · 3163 ms · 4 Belege
+✓ [Werk: blinde Wahl offen] navigation · a | /kasse | Kasse · 3101 ms · 4 Belege
+✓ [Werk: blinde Wahl offen] navigation · a | /einstellungen | Einstellungen · 3564 ms · 4 Belege
+✓ [Werk: blinde Wahl offen] navigation · a | /begriffe | Begriffe · 3750 ms · 4 Belege
+✓ [Werk: Urteil] navigation · a | / | Start · 2571 ms · 4 Belege
+✓ [Werk: Urteil] navigation · a | /werkbank | Werkbank · 3423 ms · 4 Belege
+✓ [Werk: Urteil] navigation · a | /gedaechtnis | Gedächtnis · 3018 ms · 4 Belege
+✓ [Werk: Urteil] navigation · a | /pruefstand | Prüfstand · 2730 ms · 4 Belege
+✓ [Werk: Urteil] navigation · a | /werk-null | Werk Null · 2513 ms · 4 Belege
+✓ [Werk: Urteil] navigation · a | /kasse | Kasse · 2982 ms · 4 Belege
+✓ [Werk: Urteil] navigation · a | /einstellungen | Einstellungen · 3770 ms · 4 Belege
+✓ [Werk: Urteil] navigation · a | /begriffe | Begriffe · 4037 ms · 4 Belege
+✓ [Werk: beendet] navigation · a | / | Start · 4176 ms · 4 Belege
+✓ [Werk: beendet] navigation · a | /werkbank | Werkbank · 3322 ms · 4 Belege
+✓ [Werk: beendet] navigation · a | /gedaechtnis | Gedächtnis · 2848 ms · 4 Belege
+✓ [Werk: beendet] navigation · a | /pruefstand | Prüfstand · 2769 ms · 4 Belege
+✓ [Werk: beendet] navigation · a | /werk-null | Werk Null · 2434 ms · 4 Belege
+✓ [Werk: beendet] navigation · a | /kasse | Kasse · 3108 ms · 4 Belege
+✓ [Werk: beendet] navigation · a | /einstellungen | Einstellungen · 4009 ms · 4 Belege
+✓ [Werk: beendet] navigation · a | /begriffe | Begriffe · 3592 ms · 4 Belege
+✓ [Werk: wartet 1] navigation · a | / | Start · 2801 ms · 4 Belege
+✓ [Werk: wartet 1] navigation · a | /werkbank | Werkbank · 3130 ms · 4 Belege
+✓ [Werk: wartet 1] navigation · a | /gedaechtnis | Gedächtnis · 2778 ms · 4 Belege
+✓ [Werk: wartet 1] navigation · a | /pruefstand | Prüfstand · 3037 ms · 4 Belege
+✓ [Werk: wartet 1] navigation · a | /werk-null | Werk Null · 3225 ms · 4 Belege
+✓ [Werk: wartet 1] navigation · a | /kasse | Kasse · 2716 ms · 4 Belege
+✓ [Werk: wartet 1] navigation · a | /einstellungen | Einstellungen · 2456 ms · 4 Belege
+✓ [Werk: wartet 1] navigation · a | /begriffe | Begriffe · 4141 ms · 4 Belege
+✓ [Werk: wartet 2] navigation · a | / | Start · 3011 ms · 4 Belege
+✓ [Werk: wartet 2] navigation · a | /werkbank | Werkbank · 3123 ms · 4 Belege
+✓ [Werk: wartet 2] navigation · a | /gedaechtnis | Gedächtnis · 2892 ms · 4 Belege
+✓ [Werk: wartet 2] navigation · a | /pruefstand | Prüfstand · 2878 ms · 4 Belege
+✓ [Werk: wartet 2] navigation · a | /werk-null | Werk Null · 2906 ms · 4 Belege
+✓ [Werk: wartet 2] navigation · a | /kasse | Kasse · 2420 ms · 4 Belege
+✓ [Werk: wartet 2] navigation · a | /einstellungen | Einstellungen · 2350 ms · 4 Belege
+✓ [Werk: wartet 2] navigation · a | /begriffe | Begriffe · 2227 ms · 4 Belege
+✓ [Werk: wartet 3] navigation · a | / | Start · 2314 ms · 4 Belege
+✓ [Werk: wartet 3] navigation · a | /werkbank | Werkbank · 2346 ms · 4 Belege
+✓ [Werk: wartet 3] navigation · a | /gedaechtnis | Gedächtnis · 3359 ms · 4 Belege
+✓ [Werk: wartet 3] navigation · a | /pruefstand | Prüfstand · 3149 ms · 4 Belege
+✓ [Werk: wartet 3] navigation · a | /werk-null | Werk Null · 2376 ms · 4 Belege
+✓ [Werk: wartet 3] navigation · a | /kasse | Kasse · 2653 ms · 4 Belege
+✓ [Werk: wartet 3] navigation · a | /einstellungen | Einstellungen · 2612 ms · 4 Belege
+✓ [Werk: wartet 3] navigation · a | /begriffe | Begriffe · 2427 ms · 4 Belege
+✓ [Blinde Wahl] navigation · a | / | Start · 2478 ms · 4 Belege
+✓ [Blinde Wahl] navigation · a | /werkbank | Werkbank · 2855 ms · 4 Belege
+✓ [Blinde Wahl] navigation · a | /gedaechtnis | Gedächtnis · 3672 ms · 4 Belege
+✓ [Blinde Wahl] navigation · a | /pruefstand | Prüfstand · 2325 ms · 4 Belege
+✓ [Blinde Wahl] navigation · a | /werk-null | Werk Null · 1865 ms · 4 Belege
+✓ [Blinde Wahl] navigation · a | /kasse | Kasse · 2600 ms · 4 Belege
+✓ [Blinde Wahl] navigation · a | /einstellungen | Einstellungen · 2666 ms · 4 Belege
+✓ [Blinde Wahl] navigation · a | /begriffe | Begriffe · 4138 ms · 4 Belege
+✓ [Werkbank] navigation · a | / | Start · 4436 ms · 4 Belege
+✓ [Werkbank] navigation · a | /werkbank | Werkbank · 2961 ms · 4 Belege
+✓ [Werkbank] navigation · a | /gedaechtnis | Gedächtnis · 2057 ms · 4 Belege
+✓ [Werkbank] navigation · a | /pruefstand | Prüfstand · 2157 ms · 4 Belege
+✓ [Werkbank] navigation · a | /werk-null | Werk Null · 2040 ms · 4 Belege
+✓ [Werkbank] navigation · a | /kasse | Kasse · 2062 ms · 4 Belege
+✓ [Werkbank] navigation · a | /einstellungen | Einstellungen · 2860 ms · 4 Belege
+✓ [Werkbank] navigation · a | /begriffe | Begriffe · 2561 ms · 4 Belege
+✓ [Gedächtnis] navigation · a | / | Start · 2516 ms · 4 Belege
+✓ [Gedächtnis] navigation · a | /werkbank | Werkbank · 2414 ms · 4 Belege
+✓ [Gedächtnis] navigation · a | /gedaechtnis | Gedächtnis · 2332 ms · 4 Belege
+✓ [Gedächtnis] navigation · a | /pruefstand | Prüfstand · 2714 ms · 4 Belege
+✓ [Gedächtnis] navigation · a | /werk-null | Werk Null · 3056 ms · 4 Belege
+✓ [Gedächtnis] navigation · a | /kasse | Kasse · 3355 ms · 4 Belege
+✓ [Gedächtnis] navigation · a | /einstellungen | Einstellungen · 2950 ms · 4 Belege
+✓ [Gedächtnis] navigation · a | /begriffe | Begriffe · 2315 ms · 4 Belege
+✓ [Prüfstand] navigation · a | / | Start · 2378 ms · 4 Belege
+✓ [Prüfstand] navigation · a | /werkbank | Werkbank · 2168 ms · 4 Belege
+✓ [Prüfstand] navigation · a | /gedaechtnis | Gedächtnis · 2540 ms · 4 Belege
+✓ [Prüfstand] navigation · a | /pruefstand | Prüfstand · 2035 ms · 4 Belege
+✓ [Prüfstand] navigation · a | /werk-null | Werk Null · 2729 ms · 4 Belege
+✓ [Prüfstand] navigation · a | /kasse | Kasse · 3158 ms · 4 Belege
+✓ [Prüfstand] navigation · a | /einstellungen | Einstellungen · 2945 ms · 4 Belege
+✓ [Prüfstand] navigation · a | /begriffe | Begriffe · 3420 ms · 4 Belege
+✓ [Werk Null] navigation · a | / | Start · 2511 ms · 4 Belege
+✓ [Werk Null] navigation · a | /werkbank | Werkbank · 3323 ms · 4 Belege
+✓ [Werk Null] navigation · a | /gedaechtnis | Gedächtnis · 2570 ms · 4 Belege
+✓ [Werk Null] navigation · a | /pruefstand | Prüfstand · 2119 ms · 4 Belege
+✓ [Werk Null] navigation · a | /werk-null | Werk Null · 2294 ms · 4 Belege
+✓ [Werk Null] navigation · a | /kasse | Kasse · 2139 ms · 4 Belege
+✓ [Werk Null] navigation · a | /einstellungen | Einstellungen · 2031 ms · 4 Belege
+✓ [Werk Null] navigation · a | /begriffe | Begriffe · 2339 ms · 4 Belege
+✓ [Kasse] navigation · a | / | Start · 2652 ms · 4 Belege
+✓ [Kasse] navigation · a | /werkbank | Werkbank · 3107 ms · 4 Belege
+✓ [Kasse] navigation · a | /gedaechtnis | Gedächtnis · 3014 ms · 4 Belege
+✓ [Kasse] navigation · a | /pruefstand | Prüfstand · 2633 ms · 4 Belege
+✓ [Kasse] navigation · a | /werk-null | Werk Null · 3332 ms · 4 Belege
+✓ [Kasse] navigation · a | /kasse | Kasse · 3238 ms · 4 Belege
+✓ [Kasse] navigation · a | /einstellungen | Einstellungen · 3205 ms · 4 Belege
+✓ [Kasse] navigation · a | /begriffe | Begriffe · 3057 ms · 4 Belege
+✓ [Einstellungen] navigation · a | / | Start · 2635 ms · 4 Belege
+✓ [Einstellungen] navigation · a | /werkbank | Werkbank · 2775 ms · 4 Belege
+✓ [Einstellungen] navigation · a | /gedaechtnis | Gedächtnis · 2913 ms · 4 Belege
+✓ [Einstellungen] navigation · a | /pruefstand | Prüfstand · 4766 ms · 4 Belege
+✓ [Einstellungen] navigation · a | /werk-null | Werk Null · 5842 ms · 4 Belege
+✓ [Einstellungen] navigation · a | /kasse | Kasse · 5482 ms · 4 Belege
+✓ [Einstellungen] navigation · a | /einstellungen | Einstellungen · 4555 ms · 4 Belege
+✓ [Einstellungen] navigation · a | /begriffe | Begriffe · 3551 ms · 4 Belege
+✓ [Begriffe] navigation · a | / | Start · 3418 ms · 4 Belege
+✓ [Begriffe] navigation · a | /werkbank | Werkbank · 4952 ms · 4 Belege
+✓ [Begriffe] navigation · a | /gedaechtnis | Gedächtnis · 4183 ms · 4 Belege
+✓ [Begriffe] navigation · a | /pruefstand | Prüfstand · 5312 ms · 4 Belege
+✓ [Begriffe] navigation · a | /werk-null | Werk Null · 6248 ms · 4 Belege
+✓ [Begriffe] navigation · a | /kasse | Kasse · 4165 ms · 4 Belege
+✓ [Begriffe] navigation · a | /einstellungen | Einstellungen · 4316 ms · 4 Belege
+✓ [Begriffe] navigation · a | /begriffe | Begriffe · 5901 ms · 4 Belege
+✓ [Start] begriff-erklaeren · button | button | Klartext zu Stufe | ⓘ · 4266 ms · 2 Belege
+✓ [Start] begriff-erklaeren · button | button | Klartext zu Kasse | ⓘ · 2199 ms · 2 Belege
+✓ [Start] begriff-erklaeren · button | button | Klartext zu Kontingent | ⓘ · 2691 ms · 2 Belege
+✓ [Start] begriff-erklaeren · button | button | Klartext zu Werk | ⓘ · 1779 ms · 2 Belege
+✓ [Werk: Rückfragen] begriff-erklaeren · button | button | Klartext zu Denker | ⓘ · 2297 ms · 2 Belege
+✓ [Werk: Rückfragen] begriff-erklaeren · button | button | Klartext zu Schwarm | ⓘ · 3167 ms · 2 Belege
+✓ [Werk: Rückfragen] begriff-erklaeren · button | button | Klartext zu Denker | ⓘ · 2670 ms · 2 Belege
+✓ [Werk: Rückfragen] begriff-erklaeren · button | button | Klartext zu Siegelmeister | ⓘ · 2371 ms · 2 Belege
+✓ [Werk: Rückfragen] begriff-erklaeren · button | button | Klartext zu Baumeister | ⓘ · 2142 ms · 2 Belege
+✓ [Werk: Rückfragen] begriff-erklaeren · button | button | Klartext zu Prüfer | ⓘ · 1921 ms · 2 Belege
+✓ [Werk: Rückfragen] begriff-erklaeren · button | button | Klartext zu Ankläger | ⓘ · 1774 ms · 2 Belege
+✓ [Werk: Rückfragen] begriff-erklaeren · button | button | Klartext zu Eichung | ⓘ · 1961 ms · 2 Belege
+✓ [Werk: Rückfragen] begriff-erklaeren · button | button | Klartext zu Schlussprüfung | ⓘ · 1969 ms · 2 Belege
+✓ [Werk: Rückfragen] begriff-erklaeren · button | button | Klartext zu Karte | ⓘ · 1899 ms · 2 Belege
+✓ [Werk: Rückfragen] begriff-erklaeren · button | button | Klartext zu Kartenpunkt | ⓘ · 1639 ms · 2 Belege
+✓ [Werk: Rückfragen] begriff-erklaeren · button | button | Klartext zu überangepasst | ⓘ · 1538 ms · 2 Belege
+✓ [Werk: Rückfragen] begriff-erklaeren · button | button | Klartext zu Generation | ⓘ · 1321 ms · 2 Belege
+✓ [Werk: Rückfragen] begriff-erklaeren · button | button | Klartext zu Kammer | ⓘ · 1860 ms · 2 Belege
+✓ [Werk: Entwürfe] begriff-erklaeren · button | button | Klartext zu Schwarm | ⓘ · 2233 ms · 2 Belege
+✓ [Werk: Entwürfe] begriff-erklaeren · button | button | Klartext zu Denker | ⓘ · 1483 ms · 2 Belege
+✓ [Werk: Entwürfe] begriff-erklaeren · button | button | Klartext zu Siegelmeister | ⓘ · 1388 ms · 2 Belege
+✓ [Werk: Entwürfe] begriff-erklaeren · button | button | Klartext zu Baumeister | ⓘ · 1705 ms · 2 Belege
+✓ [Werk: Entwürfe] begriff-erklaeren · button | button | Klartext zu Prüfer | ⓘ · 2076 ms · 2 Belege
+✓ [Werk: Entwürfe] begriff-erklaeren · button | button | Klartext zu Ankläger | ⓘ · 2768 ms · 2 Belege
+✓ [Werk: Entwürfe] begriff-erklaeren · button | button | Klartext zu Eichung | ⓘ · 2345 ms · 2 Belege
+✓ [Werk: Entwürfe] begriff-erklaeren · button | button | Klartext zu Schlussprüfung | ⓘ · 2126 ms · 2 Belege
+✓ [Werk: Entwürfe] begriff-erklaeren · button | button | Klartext zu Karte | ⓘ · 2639 ms · 2 Belege
+✓ [Werk: Entwürfe] begriff-erklaeren · button | button | Klartext zu Kartenpunkt | ⓘ · 4391 ms · 2 Belege
+✓ [Werk: Entwürfe] begriff-erklaeren · button | button | Klartext zu überangepasst | ⓘ · 2604 ms · 2 Belege
+✓ [Werk: Entwürfe] begriff-erklaeren · button | button | Klartext zu Generation | ⓘ · 2581 ms · 2 Belege
+✓ [Werk: Entwürfe] begriff-erklaeren · button | button | Klartext zu Kammer | ⓘ · 2281 ms · 2 Belege
+✓ [Werk: Richtungen] begriff-erklaeren · button | button | Klartext zu Richtung | ⓘ · 2379 ms · 2 Belege
+✓ [Werk: Richtungen] begriff-erklaeren · button | button | Klartext zu Landkarte | ⓘ · 3132 ms · 2 Belege
+✓ [Werk: Richtungen] begriff-erklaeren · button | button | Klartext zu Stufe | ⓘ · 2342 ms · 2 Belege
+✓ [Werk: Richtungen] begriff-erklaeren · button | button | Klartext zu Bestandsschutz | ⓘ · 2391 ms · 2 Belege
+✓ [Werk: Richtungen] begriff-erklaeren · button | button | Klartext zu Bestandstest | ⓘ · 2003 ms · 2 Belege
+✓ [Werk: Richtungen] begriff-erklaeren · button | button | Klartext zu Eichung | ⓘ · 2137 ms · 2 Belege
+✓ [Werk: Richtungen] begriff-erklaeren · button | button | Klartext zu Schlussprüfung | ⓘ · 1563 ms · 2 Belege
+✓ [Werk: Richtungen] begriff-erklaeren · button | button | Klartext zu Karte | ⓘ · 1740 ms · 2 Belege
+✓ [Werk: Richtungen] begriff-erklaeren · button | button | Klartext zu Kartenpunkt | ⓘ · 2463 ms · 2 Belege
+✓ [Werk: Richtungen] begriff-erklaeren · button | button | Klartext zu überangepasst | ⓘ · 2218 ms · 2 Belege
+✓ [Werk: Richtungen] begriff-erklaeren · button | button | Klartext zu Generation | ⓘ · 1634 ms · 2 Belege
+✓ [Werk: Richtungen] begriff-erklaeren · button | button | Klartext zu Kammer | ⓘ · 2219 ms · 2 Belege
+✓ [Werk: blinde Wahl offen] begriff-erklaeren · button | button | Klartext zu Blinde Wahl | ⓘ · 1668 ms · 2 Belege
+✓ [Werk: blinde Wahl offen] begriff-erklaeren · button | button | Klartext zu Grundlinie | ⓘ · 1479 ms · 2 Belege
+✓ [Werk: blinde Wahl offen] begriff-erklaeren · button | button | Klartext zu Schwarm | ⓘ · 1388 ms · 2 Belege
+✓ [Werk: blinde Wahl offen] begriff-erklaeren · button | button | Klartext zu Denker | ⓘ · 2083 ms · 2 Belege
+✓ [Werk: blinde Wahl offen] begriff-erklaeren · button | button | Klartext zu Siegelmeister | ⓘ · 1464 ms · 2 Belege
+✓ [Werk: blinde Wahl offen] begriff-erklaeren · button | button | Klartext zu Baumeister | ⓘ · 2248 ms · 2 Belege
+✓ [Werk: blinde Wahl offen] begriff-erklaeren · button | button | Klartext zu Prüfer | ⓘ · 2025 ms · 2 Belege
+✓ [Werk: blinde Wahl offen] begriff-erklaeren · button | button | Klartext zu Ankläger | ⓘ · 1609 ms · 2 Belege
+✓ [Werk: blinde Wahl offen] begriff-erklaeren · button | button | Klartext zu Eichung | ⓘ · 1882 ms · 2 Belege
+✓ [Werk: blinde Wahl offen] begriff-erklaeren · button | button | Klartext zu Schlussprüfung | ⓘ · 1801 ms · 2 Belege
+✓ [Werk: Urteil] begriff-erklaeren · button | button | Klartext zu Werk | ⓘ · 1539 ms · 2 Belege
+✓ [Werk: Urteil] begriff-erklaeren · button | button | Klartext zu Schwarm | ⓘ · 1409 ms · 2 Belege
+✓ [Werk: Urteil] begriff-erklaeren · button | button | Klartext zu Denker | ⓘ · 1512 ms · 2 Belege
+✓ [Werk: Urteil] begriff-erklaeren · button | button | Klartext zu Siegelmeister | ⓘ · 2040 ms · 2 Belege
+✓ [Werk: Urteil] begriff-erklaeren · button | button | Klartext zu Baumeister | ⓘ · 2494 ms · 2 Belege
+✓ [Werk: Urteil] begriff-erklaeren · button | button | Klartext zu Prüfer | ⓘ · 2088 ms · 2 Belege
+✓ [Werk: Urteil] begriff-erklaeren · button | button | Klartext zu Ankläger | ⓘ · 3039 ms · 2 Belege
+✓ [Werk: Urteil] begriff-erklaeren · button | button | Klartext zu Eichung | ⓘ · 1440 ms · 2 Belege
+✓ [Werk: Urteil] begriff-erklaeren · button | button | Klartext zu Schlussprüfung | ⓘ · 1584 ms · 2 Belege
+✓ [Werk: Urteil] begriff-erklaeren · button | button | Klartext zu Karte | ⓘ · 1533 ms · 2 Belege
+✓ [Werk: Urteil] begriff-erklaeren · button | button | Klartext zu Kartenpunkt | ⓘ · 1645 ms · 2 Belege
+✓ [Werk: Urteil] begriff-erklaeren · button | button | Klartext zu überangepasst | ⓘ · 1475 ms · 2 Belege
+✓ [Werk: Urteil] begriff-erklaeren · button | button | Klartext zu Generation | ⓘ · 1515 ms · 2 Belege
+✓ [Werk: Urteil] begriff-erklaeren · button | button | Klartext zu Kammer | ⓘ · 1810 ms · 2 Belege
+✓ [Werk: beendet] begriff-erklaeren · button | button | Klartext zu Ehrliche Grenze | ⓘ · 1430 ms · 2 Belege
+✓ [Werk: beendet] begriff-erklaeren · button | button | Klartext zu Schwarm | ⓘ · 1717 ms · 2 Belege
+✓ [Werk: beendet] begriff-erklaeren · button | button | Klartext zu Denker | ⓘ · 3099 ms · 2 Belege
+✓ [Werk: beendet] begriff-erklaeren · button | button | Klartext zu Siegelmeister | ⓘ · 2528 ms · 2 Belege
+✓ [Werk: beendet] begriff-erklaeren · button | button | Klartext zu Baumeister | ⓘ · 1660 ms · 2 Belege
+✓ [Werk: beendet] begriff-erklaeren · button | button | Klartext zu Prüfer | ⓘ · 2311 ms · 2 Belege
+✓ [Werk: beendet] begriff-erklaeren · button | button | Klartext zu Ankläger | ⓘ · 2536 ms · 2 Belege
+✓ [Werk: beendet] begriff-erklaeren · button | button | Klartext zu Eichung | ⓘ · 1956 ms · 2 Belege
+✓ [Werk: beendet] begriff-erklaeren · button | button | Klartext zu Schlussprüfung | ⓘ · 1498 ms · 2 Belege
+✓ [Werk: beendet] begriff-erklaeren · button | button | Klartext zu Karte | ⓘ · 2040 ms · 2 Belege
+✓ [Werk: beendet] begriff-erklaeren · button | button | Klartext zu Kartenpunkt | ⓘ · 2073 ms · 2 Belege
+✓ [Werk: beendet] begriff-erklaeren · button | button | Klartext zu überangepasst | ⓘ · 2138 ms · 2 Belege
+✓ [Werk: beendet] begriff-erklaeren · button | button | Klartext zu Generation | ⓘ · 2030 ms · 2 Belege
+✓ [Werk: beendet] begriff-erklaeren · button | button | Klartext zu Kammer | ⓘ · 2328 ms · 2 Belege
+✓ [Werk: wartet 1] begriff-erklaeren · button | button | Klartext zu Schwarm | ⓘ · 1675 ms · 2 Belege
+✓ [Werk: wartet 1] begriff-erklaeren · button | button | Klartext zu Denker | ⓘ · 1878 ms · 2 Belege
+✓ [Werk: wartet 1] begriff-erklaeren · button | button | Klartext zu Siegelmeister | ⓘ · 1770 ms · 2 Belege
+✓ [Werk: wartet 1] begriff-erklaeren · button | button | Klartext zu Baumeister | ⓘ · 1865 ms · 2 Belege
+✓ [Werk: wartet 1] begriff-erklaeren · button | button | Klartext zu Prüfer | ⓘ · 1773 ms · 2 Belege
+✓ [Werk: wartet 1] begriff-erklaeren · button | button | Klartext zu Ankläger | ⓘ · 1947 ms · 2 Belege
+✓ [Werk: wartet 1] begriff-erklaeren · button | button | Klartext zu Eichung | ⓘ · 2486 ms · 2 Belege
+✓ [Werk: wartet 1] begriff-erklaeren · button | button | Klartext zu Schlussprüfung | ⓘ · 1647 ms · 2 Belege
+✓ [Werk: wartet 1] begriff-erklaeren · button | button | Klartext zu Karte | ⓘ · 2956 ms · 2 Belege
+✓ [Werk: wartet 1] begriff-erklaeren · button | button | Klartext zu Kartenpunkt | ⓘ · 1498 ms · 2 Belege
+✓ [Werk: wartet 1] begriff-erklaeren · button | button | Klartext zu überangepasst | ⓘ · 1819 ms · 2 Belege
+✓ [Werk: wartet 1] begriff-erklaeren · button | button | Klartext zu Generation | ⓘ · 1635 ms · 2 Belege
+✓ [Werk: wartet 1] begriff-erklaeren · button | button | Klartext zu Kammer | ⓘ · 1598 ms · 2 Belege
+✓ [Werk: wartet 2] begriff-erklaeren · button | button | Klartext zu Schwarm | ⓘ · 1791 ms · 2 Belege
+✓ [Werk: wartet 2] begriff-erklaeren · button | button | Klartext zu Denker | ⓘ · 1371 ms · 2 Belege
+✓ [Werk: wartet 2] begriff-erklaeren · button | button | Klartext zu Siegelmeister | ⓘ · 1454 ms · 2 Belege
+✓ [Werk: wartet 2] begriff-erklaeren · button | button | Klartext zu Baumeister | ⓘ · 1528 ms · 2 Belege
+✓ [Werk: wartet 2] begriff-erklaeren · button | button | Klartext zu Prüfer | ⓘ · 1526 ms · 2 Belege
+✓ [Werk: wartet 2] begriff-erklaeren · button | button | Klartext zu Ankläger | ⓘ · 1435 ms · 2 Belege
+✓ [Werk: wartet 2] begriff-erklaeren · button | button | Klartext zu Eichung | ⓘ · 1346 ms · 2 Belege
+✓ [Werk: wartet 2] begriff-erklaeren · button | button | Klartext zu Schlussprüfung | ⓘ · 1351 ms · 2 Belege
+✓ [Werk: wartet 2] begriff-erklaeren · button | button | Klartext zu Karte | ⓘ · 1418 ms · 2 Belege
+✓ [Werk: wartet 2] begriff-erklaeren · button | button | Klartext zu Kartenpunkt | ⓘ · 1438 ms · 2 Belege
+✓ [Werk: wartet 2] begriff-erklaeren · button | button | Klartext zu überangepasst | ⓘ · 1489 ms · 2 Belege
+✓ [Werk: wartet 2] begriff-erklaeren · button | button | Klartext zu Generation | ⓘ · 1841 ms · 2 Belege
+✓ [Werk: wartet 2] begriff-erklaeren · button | button | Klartext zu Kammer | ⓘ · 1382 ms · 2 Belege
+✓ [Werk: wartet 3] begriff-erklaeren · button | button | Klartext zu Schwarm | ⓘ · 1401 ms · 2 Belege
+✓ [Werk: wartet 3] begriff-erklaeren · button | button | Klartext zu Denker | ⓘ · 1346 ms · 2 Belege
+✓ [Werk: wartet 3] begriff-erklaeren · button | button | Klartext zu Siegelmeister | ⓘ · 1508 ms · 2 Belege
+✓ [Werk: wartet 3] begriff-erklaeren · button | button | Klartext zu Baumeister | ⓘ · 1725 ms · 2 Belege
+✓ [Werk: wartet 3] begriff-erklaeren · button | button | Klartext zu Prüfer | ⓘ · 1717 ms · 2 Belege
+✓ [Werk: wartet 3] begriff-erklaeren · button | button | Klartext zu Ankläger | ⓘ · 1406 ms · 2 Belege
+✓ [Werk: wartet 3] begriff-erklaeren · button | button | Klartext zu Eichung | ⓘ · 1306 ms · 2 Belege
+✓ [Werk: wartet 3] begriff-erklaeren · button | button | Klartext zu Schlussprüfung | ⓘ · 1309 ms · 2 Belege
+✓ [Werk: wartet 3] begriff-erklaeren · button | button | Klartext zu Karte | ⓘ · 1306 ms · 2 Belege
+✓ [Werk: wartet 3] begriff-erklaeren · button | button | Klartext zu Kartenpunkt | ⓘ · 1338 ms · 2 Belege
+✓ [Werk: wartet 3] begriff-erklaeren · button | button | Klartext zu überangepasst | ⓘ · 1474 ms · 2 Belege
+✓ [Werk: wartet 3] begriff-erklaeren · button | button | Klartext zu Generation | ⓘ · 1614 ms · 2 Belege
+✓ [Werk: wartet 3] begriff-erklaeren · button | button | Klartext zu Kammer | ⓘ · 1259 ms · 2 Belege
+✓ [Blinde Wahl] begriff-erklaeren · button | button | Klartext zu Blinde Wahl | ⓘ · 1491 ms · 2 Belege
+✓ [Blinde Wahl] begriff-erklaeren · button | button | Klartext zu Grundlinie | ⓘ · 1622 ms · 2 Belege
+✓ [Werkbank] begriff-erklaeren · button | button | Klartext zu Werkbank | ⓘ · 1331 ms · 2 Belege
+✓ [Gedächtnis] begriff-erklaeren · button | button | Klartext zu Gedächtnis | ⓘ · 1278 ms · 2 Belege
+✓ [Gedächtnis] begriff-erklaeren · button | button | Klartext zu Geschmacksgedächtnis | ⓘ · 1403 ms · 2 Belege
+✓ [Prüfstand] begriff-erklaeren · button | button | Klartext zu Prüfstand | ⓘ · 1389 ms · 2 Belege
+✓ [Prüfstand] begriff-erklaeren · button | button | Klartext zu Siegel | ⓘ · 2312 ms · 2 Belege
+✓ [Prüfstand] begriff-erklaeren · button | button | Klartext zu Baumeister | ⓘ · 2408 ms · 2 Belege
+✓ [Werk Null] begriff-erklaeren · button | button | Klartext zu Werk Null | ⓘ · 2025 ms · 2 Belege
+✓ [Werk Null] begriff-erklaeren · button | button | Klartext zu Evolutionskurve | ⓘ · 2123 ms · 2 Belege
+✓ [Werk Null] begriff-erklaeren · button | button | Klartext zu Prüfstand | ⓘ · 1471 ms · 2 Belege
+✓ [Werk Null] begriff-erklaeren · button | button | Klartext zu Rückweg | ⓘ · 2031 ms · 2 Belege
+✓ [Werk Null] begriff-erklaeren · button | button | Klartext zu Übernahme | ⓘ · 1627 ms · 2 Belege
+✓ [Kasse] begriff-erklaeren · button | button | Klartext zu Kasse | ⓘ · 1858 ms · 2 Belege
+✓ [Kasse] begriff-erklaeren · button | button | Klartext zu Kontingent | ⓘ · 1559 ms · 2 Belege
+✓ [Einstellungen] begriff-erklaeren · button | button | Klartext zu Herstellergebot | ⓘ · 1727 ms · 2 Belege
+✓ [Einstellungen] begriff-erklaeren · button | button | Klartext zu Denker | ⓘ · 1669 ms · 2 Belege
+✓ [Einstellungen] begriff-erklaeren · button | button | Klartext zu Siegelmeister | ⓘ · 1532 ms · 2 Belege
+✓ [Einstellungen] begriff-erklaeren · button | button | Klartext zu Ankläger | ⓘ · 1407 ms · 2 Belege
+✓ [Einstellungen] begriff-erklaeren · button | button | Klartext zu Prüfer | ⓘ · 1458 ms · 2 Belege
+✓ [Start] werk-oeffnen · a | /werk/w-probe-urteil | Urlaubsplaner für die Familie · 2672 ms · 5 Belege
+✓ [Start] werk-oeffnen · a | /werk/w-probe-blinde-wahl | Terminbuch, Beweislauf · 2686 ms · 5 Belege
+✓ [Start] werk-oeffnen · a | /werk/w-probe-richtungen | Terminbuch, Stufe 2 · 2306 ms · 5 Belege
+✓ [Start] werk-oeffnen · a | /werk/w-probe-entwuerfe | Vereinskalender · 2020 ms · 5 Belege
+✓ [Start] werk-oeffnen · a | /werk/w-probe-rueckfragen | Haushaltsbuch für eine WG · 2462 ms · 5 Belege
+✓ [Start] werk-oeffnen · a | /werk/w-202611080223-e58605 | Leseliste für den Lesekreis · 2748 ms · 5 Belege
+✓ [Start] werk-oeffnen · a | /werk/w-202611080223-677e37 | Pflanzenkalender für den Balkon · 2742 ms · 5 Belege
+✓ [Start] werk-oeffnen · a | /werk/w-202611080223-5fbd86 | Vereinskasse mit Belegen · 2401 ms · 5 Belege
+✓ [Start] werk-oeffnen · a | /werk/w-probe-beendet | Terminbuch für einen Friseursalon · 3158 ms · 5 Belege
+✓ [Werkbank] werk-oeffnen · a | /werk/w-probe-urteil | Urlaubsplaner für die Familie · 2409 ms · 5 Belege
+✓ [Werkbank] werk-oeffnen · a | /werk/w-probe-blinde-wahl | Terminbuch, Beweislauf · 2598 ms · 5 Belege
+✓ [Werkbank] werk-oeffnen · a | /werk/w-probe-richtungen | Terminbuch, Stufe 2 · 3391 ms · 5 Belege
+✓ [Werkbank] werk-oeffnen · a | /werk/w-probe-entwuerfe | Vereinskalender · 3051 ms · 5 Belege
+✓ [Werkbank] werk-oeffnen · a | /werk/w-probe-rueckfragen | Haushaltsbuch für eine WG · 5015 ms · 5 Belege
+✓ [Werkbank] werk-oeffnen · a | /werk/w-202611080223-e58605 | Leseliste für den Lesekreis · 2233 ms · 5 Belege
+✓ [Werkbank] werk-oeffnen · a | /werk/w-202611080223-677e37 | Pflanzenkalender für den Balkon · 2602 ms · 5 Belege
+✓ [Werkbank] werk-oeffnen · a | /werk/w-202611080223-5fbd86 | Vereinskasse mit Belegen · 2497 ms · 5 Belege
+✓ [Werk: blinde Wahl offen] blinde-wahl-oeffnen · a | /blinde-wahl/w-probe-blinde-wahl | Jetzt blind wählen · 2900 ms · 5 Belege
+✓ [Werk: beendet] ergebnis-oeffnen · a | /api/werke/w-probe-beendet/ergebnis | Ergebnis öffnen · 1865 ms · 2 Belege
+✓ [Start] modus-wahl · button | button | Zu Ende entwickeln · 2251 ms · 5 Belege
+✓ [Start] modus-wahl · button | button | Weiterentwickeln · 2403 ms · 4 Belege
+✓ [Start] regler-zeit · div | slider | Zeit · 2056 ms · 3 Belege
+✓ [Start] regler-tempo · div | slider | Tempo · 2068 ms · 3 Belege
+✓ [Start] regler-modell · div | slider | Modell · 1981 ms · 3 Belege
+✓ [Start] regler-kasse · div | slider | Kasse · 1993 ms · 3 Belege
+✓ [Start] regler-groesse · div | slider | Größe · 2930 ms · 5 Belege
+✓ [Start] quelle-wahl · button | button | Nur Text · 1871 ms · 4 Belege
+✓ [Start] quelle-wahl · button | button | Bild · 1575 ms · 3 Belege
+✓ [Start] quelle-wahl · button | button | Prototyp als ZIP · 1267 ms · 3 Belege
+✓ [Start] quelle-wahl · button | button | Repo-Link · 2506 ms · 3 Belege
+✓ [Start] quelle-wahl · button | button | Bestehendes Werk · 2359 ms · 3 Belege
+✓ [Start] voreinstellung-laden · button | button | Kurzprobe · 2394 ms · 3 Belege
+✓ [Start] voreinstellung-laden · button | button | Nachtlauf · 2076 ms · 3 Belege
+✓ [Start] idee · textarea | Idee oder Wunsch · 2755 ms · 4 Belege
+✓ [Start] bild-datei · input | file | Bild oder Bildschirmfoto · 3603 ms · 5 Belege
+✓ [Start] zip-datei · input | file | Prototyp als ZIP · 3574 ms · 5 Belege
+✓ [Start] repo-link · input | url | Repo-Link · 4532 ms · 4 Belege
+✓ [Start] werk-auswahl · select | Bestehendes Werk · 4729 ms · 4 Belege
+✓ [Start] werk-starten · button | button | Werk starten · 2735 ms · 3 Belege
+✓ [Start] voreinstellung-name · input | text | Name der Stellung · 1774 ms · 3 Belege
+✓ [Start] voreinstellung-speichern · button | button | Stellung speichern · 2556 ms · 3 Belege
+✓ [Werk: Rückfragen] rueckfrage-antwort · button | button | Nur ich · 1591 ms · 1 Belege
+✓ [Werk: Rückfragen] rueckfrage-antwort · button | button | Alle in der WG · 1652 ms · 1 Belege
+✓ [Werk: Rückfragen] rueckfrage-antwort · button | button | Alle und Gäste · 1300 ms · 1 Belege
+✓ [Werk: Rückfragen] rueckfrage-antwort · button | button | Monatlich · 1566 ms · 1 Belege
+✓ [Werk: Rückfragen] rueckfrage-antwort · button | button | Je Einkauf · 1684 ms · 1 Belege
+✓ [Werk: Rückfragen] rueckfrage-antwort · button | button | Auf Zuruf · 1386 ms · 1 Belege
+✓ [Werk: Rückfragen] rueckfragen-senden · button | button | Antworten senden · 1966 ms · 4 Belege
+✓ [Werk: Entwürfe] entwurf-waehlen · button | button | Wählen: Ruhig | Wählen · 1583 ms · 3 Belege
+✓ [Werk: Entwürfe] entwurf-waehlen · button | button | Wählen: Kräftig | Wählen · 1883 ms · 3 Belege
+✓ [Werk: Entwürfe] entwurf-waehlen · button | button | Wählen: Verspielt | Wählen · 1674 ms · 3 Belege
+✓ [Werk: Richtungen] richtung-waehlen · button | button | Wählen: Teilen per Link | Wählen · 1544 ms · 3 Belege
+✓ [Werk: Richtungen] richtung-waehlen · button | button | Wählen: Offline zuerst | Wählen · 1382 ms · 3 Belege
+✓ [Werk: Richtungen] richtung-waehlen · button | button | Wählen: Vorlagen | Wählen · 1397 ms · 3 Belege
+✓ [Werk: Urteil] urteil-geben · button | button | So urteile ich: Ja, vollendet | So urteile ich · 1425 ms · 3 Belege
+✓ [Werk: Urteil] urteil-geben · button | button | So urteile ich: Nein, nachbessern | So urteile ich · 1397 ms · 3 Belege
+✓ [Blinde Wahl] blinde-wahl · button | button | Fassung A wählen · 1269 ms · 4 Belege
+✓ [Blinde Wahl] blinde-wahl · button | button | Fassung B wählen · 1397 ms · 4 Belege
+✓ [Werkbank] werkbank-hoch · button | button | Hoch: Pflanzenkalender für den Balkon | Hoch · 1378 ms · 4 Belege
+✓ [Werkbank] werkbank-hoch · button | button | Hoch: Vereinskasse mit Belegen | Hoch · 1326 ms · 4 Belege
+✓ [Werkbank] werkbank-runter · button | button | Runter: Leseliste für den Lesekreis | Runter · 1384 ms · 4 Belege
+✓ [Werkbank] werkbank-runter · button | button | Runter: Pflanzenkalender für den Balkon | Runter · 1584 ms · 4 Belege
+✓ [Einstellungen] modell-organ · input | text | DenkerⓘDer Denker stellt Rückfragen, zeichnet Entwürfe und schreibt den Bauplan. · 1417 ms · 3 Belege
+✓ [Einstellungen] modell-organ · input | text | SiegelmeisterⓘDer Siegelmeister schreibt vor dem Bau die Tests der Karte und der Schlussprüfung und versiegelt sie. · 1370 ms · 3 Belege
+✓ [Einstellungen] modell-organ · input | text | AnklägerⓘDer Ankläger schreibt Angriffstests, die das Werk mit bösartigen oder kaputten Eingaben auf die Probe stellen. · 1420 ms · 3 Belege
+✓ [Einstellungen] modell-organ · input | text | PrüferⓘDer Prüfer misst jede Generation von außen an der Karte und schreibt den Mängelbericht. · 1560 ms · 3 Belege
+✓ [Einstellungen] parallel-werke · input | number | Werke gleichzeitig · 1555 ms · 3 Belege
+✓ [Einstellungen] einstellungen-speichern · button | button | Einstellungen speichern · 1592 ms · 4 Belege
+✓ [Einstellungen] push-einschalten · button | button | Push-Meldungen einschalten · 1310 ms · 3 Belege
+✓ [Einrichten] einrichtungscode · input | text | Einrichtungscode · 4163 ms · 4 Belege
+✓ [Einrichten] passwort-neu · input | password | Neues Passwort · 6863 ms · 4 Belege
+✓ [Einrichten] passwort-neu · input | password | Passwort wiederholen · 5830 ms · 4 Belege
+✓ [Einrichten] einrichten · button | submit | Passwort setzen · 5812 ms · 2 Belege
+✓ [Anmelden] passwort · input | password | Passwort · 3339 ms · 4 Belege
+✓ [Anmelden] anmelden · button | submit | Anmelden · 2313 ms · 2 Belege
+✓ [Werk: Rückfragen] werk-abbrechen · button | button | Werk abbrechen · 1720 ms · 4 Belege
+✓ [Werk: Entwürfe] werk-abbrechen · button | button | Werk abbrechen · 1941 ms · 4 Belege
+✓ [Werk: Richtungen] werk-abbrechen · button | button | Werk abbrechen · 2081 ms · 4 Belege
+✓ [Werk: blinde Wahl offen] werk-abbrechen · button | button | Werk abbrechen · 1932 ms · 4 Belege
+✓ [Werk: Urteil] werk-abbrechen · button | button | Werk abbrechen · 1753 ms · 4 Belege
+✓ [Werk: wartet 1] werk-abbrechen · button | button | Werk abbrechen · 1810 ms · 4 Belege
+✓ [Werk: wartet 2] werk-abbrechen · button | button | Werk abbrechen · 2168 ms · 4 Belege
+✓ [Werk: wartet 3] werk-abbrechen · button | button | Werk abbrechen · 1964 ms · 4 Belege
+Befunde: 0
+Gesamt: BESTANDEN

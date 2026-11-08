@@ -1,0 +1,2 @@
+SHA-256 von DATEIEN-01.txt (deckt jede Datei mit Bytes und eigener SHA-256 ab):
+49be31951fe0356bcd48f1b99e7444fc25b173805fcb7d27c9b3f4b341ee11b2

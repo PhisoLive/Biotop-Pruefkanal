@@ -1,0 +1,18 @@
+# Befunde vor den Fixes (Rohausgabe der Läufe von node scripts/cockpit-ablaeufe.ts, 08.11.2026)
+# Gegenprobe der neuen Prüfungen: Diese Zeilen waren rot, bevor das Cockpit behoben war.
+
+## Lauf 1 (--groesse=820x1180): Service Worker und blinde Wahl
+820x1180 · 21 ergebnis-oeffnen · NICHT bestanden
+  ✗ Ablauf: Offline-Startseite des Service Workers bleibt HTML: erwartet "text/html; charset=utf-8", gefunden "application/gzip"
+820x1180 · 22 blinde-wahl-vorher · NICHT bestanden
+  ✗ Ablauf: Werkseite: Kacheln, Generationen, Bericht vor der Wahl: erwartet [0,0,0], gefunden [10,2,0]
+
+## Lauf 2 (--groesse=820x1180): Einstellungen
+820x1180 · 28 einstellungen · NICHT bestanden
+  ✗ Ablauf: Feineinstellung: ein Feld je Organ: erwartet 4, gefunden 0
+
+## Lauf 3 (alle Größen): Schätzung und Ist auf dem Handy
+390x844 · 20 schaetzung-und-ist · NICHT bestanden
+  ✗ Ablauf: Ist neben der Schätzung: nicht erfüllt (Schätzung bei x=32, y=1054.25; Ist bei x=32, y=1358.109375)
+Schritte: 87 (Soll 87), nicht bestanden: 1
+Gesamt: NICHT BESTANDEN

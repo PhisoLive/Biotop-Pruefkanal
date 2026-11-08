@@ -1,0 +1,94 @@
+# D-8 Klartext der Evolutionsbegriffe – 2026-11-08T01:59:21Z – Repo 8edcc10 + Arbeitsbaum
+
+$ node scripts/klartext-pruefen.ts
+Klartextprüfung D-8 · 2026-11-08T01:59:21.942Z
+
+Tafel: 36 Begriffe · 50 Vorkommen in 26 Dateien
+  Werk: 2 Vorkommen
+  Probewerk: 1 Vorkommen
+  Werk Null: 1 Vorkommen
+  Generation: 1 Vorkommen
+  Schwarm: 1 Vorkommen
+  Siegel: 1 Vorkommen
+  Siegelmeister: 2 Vorkommen
+  Kammer: 1 Vorkommen
+  Gedächtnis: 1 Vorkommen
+  Geschmacksgedächtnis: 1 Vorkommen
+  Prüfstand: 2 Vorkommen
+  Singularität: 1 Vorkommen
+  Ehrliche Grenze: 1 Vorkommen
+  überangepasst: 1 Vorkommen
+  Karte: 1 Vorkommen
+  Kartenpunkt: 1 Vorkommen
+  Eichung: 1 Vorkommen
+  Schlussprüfung: 1 Vorkommen
+  Bestandsschutz: 1 Vorkommen
+  Bestandstest: 1 Vorkommen
+  Stufe: 2 Vorkommen
+  Richtung: 1 Vorkommen
+  Landkarte: 1 Vorkommen
+  Denker: 3 Vorkommen
+  Baumeister: 3 Vorkommen
+  Prüfer: 2 Vorkommen
+  Ankläger: 2 Vorkommen
+  Kasse: 3 Vorkommen
+  Evolutionskurve: 1 Vorkommen
+  Übernahme: 1 Vorkommen
+  Rückweg: 1 Vorkommen
+  Blinde Wahl: 2 Vorkommen
+  Grundlinie: 2 Vorkommen
+  Herstellergebot: 1 Vorkommen
+  Werkbank: 1 Vorkommen
+  Kontingent: 1 Vorkommen
+Begriffe ohne Satz: 0
+Sätze ohne Begriff in der Oberfläche: 0
+Doppelt in der Tafel: 0
+Gesamt: 0 Befunde – BESTANDEN
+Rückgabewert: 0
+
+$ node scripts/klartext-pruefen.ts --gegenprobe
+Klartextprüfung D-8 · 2026-11-08T01:59:22.276Z
+
+Tafel: 36 Begriffe · 50 Vorkommen in 26 Dateien
+  Werk: 2 Vorkommen
+  Probewerk: 1 Vorkommen
+  Werk Null: 1 Vorkommen
+  Generation: 1 Vorkommen
+  Schwarm: 1 Vorkommen
+  Siegel: 1 Vorkommen
+  Siegelmeister: 2 Vorkommen
+  Kammer: 1 Vorkommen
+  Gedächtnis: 1 Vorkommen
+  Geschmacksgedächtnis: 1 Vorkommen
+  Prüfstand: 2 Vorkommen
+  Singularität: 1 Vorkommen
+  Ehrliche Grenze: 1 Vorkommen
+  überangepasst: 1 Vorkommen
+  Karte: 1 Vorkommen
+  Kartenpunkt: 1 Vorkommen
+  Eichung: 1 Vorkommen
+  Schlussprüfung: 1 Vorkommen
+  Bestandsschutz: 1 Vorkommen
+  Bestandstest: 1 Vorkommen
+  Stufe: 2 Vorkommen
+  Richtung: 1 Vorkommen
+  Landkarte: 1 Vorkommen
+  Denker: 3 Vorkommen
+  Baumeister: 3 Vorkommen
+  Prüfer: 2 Vorkommen
+  Ankläger: 2 Vorkommen
+  Kasse: 3 Vorkommen
+  Evolutionskurve: 1 Vorkommen
+  Übernahme: 1 Vorkommen
+  Rückweg: 1 Vorkommen
+  Blinde Wahl: 2 Vorkommen
+  Grundlinie: 2 Vorkommen
+  Herstellergebot: 1 Vorkommen
+  Werkbank: 1 Vorkommen
+  Kontingent: 1 Vorkommen
+Begriffe ohne Satz: 0
+Sätze ohne Begriff in der Oberfläche: 0
+Doppelt in der Tafel: 0
+Gegenprobe: „Gegenprobe-Begriff ohne Satz“ in eine Kopie der Oberfläche eingeschleust – gemeldet in (Gegenprobe):1, bestanden.
+Gesamt: 0 Befunde – BESTANDEN
+Rückgabewert: 0
