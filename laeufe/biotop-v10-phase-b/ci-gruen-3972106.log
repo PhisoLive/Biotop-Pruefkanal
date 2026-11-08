@@ -1,0 +1,147 @@
+pruefen	Regeln aus 3.5	﻿2026-11-08T03:54:05.0428716Z ##[group]Run node scripts/pruefen.ts --bericht=reports/pruefbericht.md
+^[[36;1mnode scripts/pruefen.ts --bericht=reports/pruefbericht.md^[[0m
+shell: /usr/bin/bash -e {0}
+##[endgroup]
+### typen – bestanden
+459 Dateien, 0 Typfehler
+
+
+### lint – bestanden
+462 Dateien, 0 Fehler, 0 Warnungen
+
+
+### format – bestanden
+Checking formatting...
+All matched files use Prettier code style!
+
+### doppelungen – bestanden
+58506 Zeilen, Doppelungen 0 %, 0 Klone
+^[[90mNo duplicates found.^[[39m
+^[[90m┌────────────┬────────────────┬─────────────┬──────────────┬──────────────┬──────────────────┬───────────────────┐^[[39m
+^[[90m│^[[39m^[[31m Format     ^[[39m^[[90m│^[[39m^[[31m Files analyzed ^[[39m^[[90m│^[[39m^[[31m Total lines ^[[39m^[[90m│^[[39m^[[31m Total tokens ^[[39m^[[90m│^[[39m^[[31m Clones found ^[[39m^[[90m│^[[39m^[[31m Duplicated lines ^[[39m^[[90m│^[[39m^[[31m Duplicated tokens ^[[39m^[[90m│^[[39m
+^[[90m├────────────┼────────────────┼─────────────┼──────────────┼──────────────┼──────────────────┼───────────────────┤^[[39m
+^[[90m│^[[39m javascript ^[[90m│^[[39m 1              ^[[90m│^[[39m 53          ^[[90m│^[[39m 234          ^[[90m│^[[39m 0            ^[[90m│^[[39m 0 (0.00%)        ^[[90m│^[[39m 0 (0.00%)         ^[[90m│^[[39m
+^[[90m├────────────┼────────────────┼─────────────┼──────────────┼──────────────┼──────────────────┼───────────────────┤^[[39m
+^[[90m│^[[39m typescript ^[[90m│^[[39m 455            ^[[90m│^[[39m 58453       ^[[90m│^[[39m 450964       ^[[90m│^[[39m 0            ^[[90m│^[[39m 0 (0.00%)        ^[[90m│^[[39m 0 (0.00%)         ^[[90m│^[[39m
+^[[90m├────────────┼────────────────┼─────────────┼──────────────┼──────────────┼──────────────────┼───────────────────┤^[[39m
+^[[90m│^[[39m ^[[1mTotal:^[[22m     ^[[90m│^[[39m 456            ^[[90m│^[[39m 58506       ^[[90m│^[[39m 451198       ^[[90m│^[[39m 0            ^[[90m│^[[39m 0 (0.00%)        ^[[90m│^[[39m 0 (0.00%)         ^[[90m│^[[39m
+^[[90m└────────────┴────────────────┴─────────────┴──────────────┴──────────────┴──────────────────┴───────────────────┘^[[39m
+^[[90mFound 0 clones.^[[39m
+^[[32mJSON report saved to reports/jscpd/jscpd-report.json^[[39m
+^[[90mtime: 170.985ms^[[39m
+
+### architektur – bestanden
+476 Module, 0 Verstöße
+
+
+### ungenutzt – bestanden
+
+
+### tests – bestanden
+2252 Tests, 0 fehlgeschlagen; Abdeckung Zeilen 99.93 %, Zweige 99.51 %
+ ^[[32m✓^[[39m test/push/bytes.test.ts ^[[2m(^[[22m^[[2m4 tests^[[22m^[[2m)^[[22m^[[32m 8^[[2mms^[[22m^[[39m
+ ^[[32m✓^[[39m test/builder/factory.test.ts ^[[2m(^[[22m^[[2m1 test^[[22m^[[2m)^[[22m^[[32m 7^[[2mms^[[22m^[[39m
+ ^[[32m✓^[[39m test/cockpit/client/start-page-works.test.ts ^[[2m(^[[22m^[[2m1 test^[[22m^[[2m)^[[22m^[[32m 50^[[2mms^[[22m^[[39m
+ ^[[32m✓^[[39m test/examiner/harness/bedien-browser.test.ts ^[[2m(^[[22m^[[2m3 tests^[[22m^[[2m)^[[22m^[[33m 376^[[2mms^[[22m^[[39m
+   ^[[33m^[[2m✓^[[22m^[[39m die echten Werkzeuge legen je Start ein frisches Profilverzeichnis an^[[33m 369^[[2mms^[[22m^[[39m
+ ^[[32m✓^[[39m test/examiner/measure/index.test.ts ^[[2m(^[[22m^[[2m2 tests^[[22m^[[2m)^[[22m^[[32m 16^[[2mms^[[22m^[[39m
+ ^[[32m✓^[[39m test/infra/places.test.ts ^[[2m(^[[22m^[[2m1 test^[[22m^[[2m)^[[22m^[[32m 5^[[2mms^[[22m^[[39m
+
+^[[2m Test Files ^[[22m ^[[1m^[[32m191 passed^[[39m^[[22m^[[90m (191)^[[39m
+^[[2m      Tests ^[[22m ^[[1m^[[32m2252 passed^[[39m^[[22m^[[90m (2252)^[[39m
+^[[2m   Start at ^[[22m 03:54:52
+^[[2m   Duration ^[[22m 59.11s^[[2m (tests 62%, import 20%, worker 11%, transform 7%)^[[22m
+
+^[[2m    Isolate ^[[22m ^[[33m191 workers spawned^[[39m^[[2m · ~108ms startup each (spawn + environment, per file)^[[22m
+^[[2m            ^[[22m ^[[2mat least ~20.59s faster with ^[[22m^[[33misolate: false^[[39m^[[2m — reuses workers across files instead of one per file^[[22m
+
+JSON report written to /home/runner/work/Biotop-System/Biotop-System/reports/vitest.json
+^[[34m % ^[[39m^[[2mCoverage report from ^[[22m^[[33mv8^[[39m
+
+=============================== Coverage summary ===============================
+Statements   : 99.85% ( 5438/5446 )
+Branches     : 99.51% ( 2473/2485 )
+Functions    : 99.63% ( 1639/1645 )
+Lines        : 99.93% ( 4811/4814 )
+================================================================================
+
+### mutation – bestanden
+14158 Mutanten, Mutationswert 98.72 % (Grenze 70 % gesamt und je Datei)
+
+
+### audit – bestanden
+510 Abhängigkeiten, hoch 0, kritisch 0
+
+### geheimnisse – bestanden
+
+
+| Prüfung | Ergebnis | Gegenstand | Dauer | Regel |
+|---|---|---|---|---|
+| typen | BESTANDEN | 459 | 9.8 s | Typprüfung ohne Fehler |
+| lint | BESTANDEN | 462 | 25.3 s | Linter: 0 Fehler, 0 Warnungen (any, Länge, Parameter, Komplexität, Architektur-Literale) |
+| format | BESTANDEN | 459 | 8.3 s | Formatierer: 0 Abweichungen |
+| doppelungen | BESTANDEN | 58506 | 0.2 s | Doppelungen höchstens 2 % |
+| architektur | BESTANDEN | 476 | 1.8 s | 0 Zyklen, Modulgrenzen |
+| ungenutzt | BESTANDEN | 459 | 1.6 s | 0 ungenutzte Dateien, Exporte, Abhängigkeiten |
+| tests | BESTANDEN | 2252 | 59.7 s | Tests grün; Kern ≥ 90 % Zeilen, ≥ 85 % Zweige |
+| mutation | BESTANDEN | 14158 | 4617.6 s | Kern: Mutationswert ≥ 70 % |
+| audit | BESTANDEN | 510 | 2 s | 0 hohe oder kritische Sicherheitsbefunde |
+| geheimnisse | BESTANDEN | 459 | 0.6 s | 0 Geheimnisse im Inhalt |
+
+Gesamt: BESTANDEN
+##[error]$GITHUB_STEP_SUMMARY upload aborted, supports content up to a size of 1024k, got 2601k. For more information see: https://docs.github.com/actions/using-workflows/workflow-commands-for-github-actions#adding-a-markdown-summary
+pruefen	Geheimnisscan mit Gegenprobe	﻿2026-11-08T05:12:52.2947381Z ##[group]Run node scripts/geheimnisscan.ts --verzeichnis=. --gegenprobe
+^[[36;1mnode scripts/geheimnisscan.ts --verzeichnis=. --gegenprobe^[[0m
+shell: /usr/bin/bash -e {0}
+##[endgroup]
+Scan: 524 Dateien, 0 Befunde
+Gegenprobe mit eingepflanzten Testschlüsseln: 526 Dateien, 4 Befunde
+  /tmp/biotop-gegenprobe-7t9M2C/eingepflanzt/.env: @secretlint/secretlint-rule-pattern
+  /tmp/biotop-gegenprobe-7t9M2C/eingepflanzt/.env: @secretlint/secretlint-rule-pattern
+  /tmp/biotop-gegenprobe-7t9M2C/eingepflanzt/.env: @secretlint/secretlint-rule-pattern
+  /tmp/biotop-gegenprobe-7t9M2C/eingepflanzt/notiz.md: @secretlint/secretlint-rule-pattern
+Gegenprobe: 2 von 2 eingepflanzten Dateien erkannt.
+Geheimnisscan: 0 Befunde – Push erlaubt.
+pruefen	Run actions/upload-artifact@v4	﻿2026-11-08T05:12:54.1768316Z ##[group]Run actions/upload-artifact@v4
+with:
+  name: pruefbericht
+  path: reports/
+  include-hidden-files: true
+  if-no-files-found: warn
+  compression-level: 6
+  overwrite: false
+##[endgroup]
+(node:63980) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+With the provided path, there will be 5 files uploaded
+Artifact name is valid!
+Root directory input is valid!
+Beginning upload of artifact content to blob storage
+(node:63980) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+Uploaded bytes 1530030
+Finished uploading artifact content to blob storage!
+SHA256 digest of uploaded artifact zip is e7011b64d8e8fc7115aeeffa2f6b9c4060e1559c741d64b64d541289f7c96a8b
+Finalizing artifact upload
+Artifact pruefbericht.zip successfully finalized. Artifact ID 13604669954
+Artifact pruefbericht has been successfully uploaded! Final size is 1530030 bytes. Artifact ID is 13604669954
+Artifact download URL: https://github.com/PhisoLive/Biotop-System/actions/runs/42444578655/artifacts/13604669954
+pruefen	Post Run actions/setup-node@v4	﻿2026-11-08T05:12:56.1869043Z Post job cleanup.
+(node:63992) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Cache hit occurred on the primary key node-cache-Linux-x64-npm-8283809ccdd3383afc15410bb632f6a7fa25ed53e63fe0d6acf0df1b9c30ff79, not saving cache.
+pruefen	Post Run actions/checkout@v4	﻿2026-11-08T05:12:56.3423622Z Post job cleanup.
+[command]/usr/bin/git version
+git version 2.56.0
+Temporarily overriding HOME='/home/runner/work/_temp/c8575cc3-e1cf-45ae-b19b-8a150add7a12' before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+[command]/usr/bin/git config --global --add safe.directory /home/runner/work/Biotop-System/Biotop-System
+[command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+[command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+http.https://github.com/.extraheader
+[command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+[command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+[command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+[command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+pruefen	Complete job	﻿2026-11-08T05:12:56.7043043Z Cleaning up orphan processes
+##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-node@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

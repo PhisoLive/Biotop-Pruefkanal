@@ -1,0 +1,13 @@
+# SHA-256  Bytes  Datei (relativ zum Ordner)
+0542ab98fadf7c8d4b382b9a5af5fee6f54e9baae5ae6f32bdb645dbd1d376c3        6439  BERICHT-01.md
+ba31524f91ee4c30880d6be410d4ebeef4e7841befc2c3c9bc18ba2d5abfec3d        2464  BERICHT-02.md
+df5d635057af9ba887fb78e58a2a256ade32a2583ea3331cad5ed03e40c14408         842  DATEIEN-01.txt
+211236b6e1b4ece7de2f96de86c63f81ef120b83d799f563b6f831d0ab8d46a5        4131  b-kammerprobe.txt
+843ac4060a0b20c29882af492b74e82377bcfc0fb2029b089dabba6d3a9ebf4b        4594  b1-siegelprobe-eichprobe.txt
+4a3ca7b0496a843c3477d712ad6cfeb0e73d4989b278e5f215ace8abf239cfdf         705  b2-b8-lauf-1-mangel-gefunden.log
+34ef0179580fcb99be9d7a52fe901c342f8685d9b4458386effed7978898a29d         729  b2-b8-lauf-2.log
+9ece2422cace06b8eefa6a7f76cf0a47462693a91d140d204605ccd48391b1fd        5303  b2-b8-probenskript.ts
+f9d38e0e45cec8c7da01c0143a7b6e09459a57f37e9310d5a88fcd0dcfb08784       11192  ci-gruen-3972106.log
+1cfb9804acd477dfca3f79483b89b48ba2507891ba2e49d12e86875a59c059b2        4075  maengelliste-02.md
+fc1402e817e5be63c1b09035675d2cddb47849b65c5286ab94302b329c453c5b        3525  maengelliste.md
+6dfece98c85cf8986bd23187b0a12bc7b20eaee72c88e570009cdccf60d869bf        5511  pruefbericht-4140fee.md
